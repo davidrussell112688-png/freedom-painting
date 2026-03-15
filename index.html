@@ -782,149 +782,7 @@
         .footer-bottom a { color: rgba(255,255,255,0.5); }
         .footer-bottom a:hover { color: var(--white); }
 
-        /* ============================================
-           CHAT WIDGET (RESTYLED FOR FREEDOM PAINTING)
-           ============================================ */
-        #minerva-chat-btn {
-            position: fixed;
-            bottom: 24px;
-            right: 24px;
-            background: var(--red);
-            color: var(--white);
-            border: none;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            font-size: 24px;
-            cursor: pointer;
-            box-shadow: 0 4px 16px rgba(191, 27, 44, 0.4);
-            z-index: 1000;
-            transition: var(--transition);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        #minerva-chat-btn:hover { transform: scale(1.08); box-shadow: 0 6px 24px rgba(191, 27, 44, 0.5); }
-        #minerva-chat-btn.active { background: var(--navy); }
-        #minerva-chat-window {
-            position: fixed;
-            bottom: 96px;
-            right: 24px;
-            width: 380px;
-            height: 520px;
-            background: var(--white);
-            border: 1px solid rgba(0,0,0,0.08);
-            border-radius: 12px;
-            box-shadow: var(--shadow-lg);
-            display: none;
-            flex-direction: column;
-            z-index: 1000;
-            overflow: hidden;
-        }
-        #minerva-chat-header {
-            background: var(--navy);
-            color: var(--white);
-            padding: 1.25rem 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-        .chat-header-dot {
-            width: 10px;
-            height: 10px;
-            background: #34D058;
-            border-radius: 50%;
-            animation: pulse 2s ease-in-out infinite;
-        }
-        .chat-header-info h4 {
-            font-family: var(--font-display);
-            font-size: 1rem;
-            letter-spacing: 0.08em;
-        }
-        .chat-header-info p {
-            font-size: 0.7rem;
-            opacity: 0.6;
-        }
-        #minerva-chat-messages {
-            flex-grow: 1;
-            padding: 1.25rem;
-            overflow-y: auto;
-            background: var(--cream);
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
-        }
-        .msg {
-            padding: 0.75rem 1rem;
-            border-radius: 12px;
-            max-width: 85%;
-            word-wrap: break-word;
-            font-size: 0.9rem;
-            line-height: 1.6;
-        }
-        .user-msg {
-            background: var(--navy);
-            color: white;
-            align-self: flex-end;
-            border-bottom-right-radius: 4px;
-        }
-        .bot-msg {
-            background: var(--white);
-            color: var(--text-dark);
-            align-self: flex-start;
-            border-bottom-left-radius: 4px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-        }
-        .typing-indicator {
-            display: none;
-            align-self: flex-start;
-            padding: 0.75rem 1rem;
-            background: var(--white);
-            border-radius: 12px;
-            border-bottom-left-radius: 4px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-        }
-        .typing-indicator span {
-            display: inline-block;
-            width: 7px;
-            height: 7px;
-            background: var(--text-light);
-            border-radius: 50%;
-            margin: 0 1px;
-            animation: typingBounce 1.4s infinite;
-        }
-        .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
-        .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
-        #minerva-chat-input-area {
-            display: flex;
-            border-top: 1px solid rgba(0,0,0,0.06);
-            padding: 0.75rem;
-            background: var(--white);
-            gap: 0.5rem;
-        }
-        #minerva-user-input {
-            flex-grow: 1;
-            padding: 0.65rem 1rem;
-            border: 1px solid var(--cream-dark);
-            border-radius: 8px;
-            font-family: var(--font-body);
-            font-size: 0.9rem;
-            outline: none;
-            background: var(--cream);
-            transition: var(--transition);
-        }
-        #minerva-user-input:focus { border-color: var(--navy); background: var(--white); }
-        #minerva-send-btn {
-            background: var(--red);
-            color: var(--white);
-            border: none;
-            padding: 0.65rem 1rem;
-            border-radius: 8px;
-            font-family: var(--font-display);
-            letter-spacing: 0.06em;
-            transition: var(--transition);
-        }
-        #minerva-send-btn:hover { background: var(--red-dark); }
+
 
         /* ============================================
            ANIMATIONS
@@ -937,14 +795,7 @@
             0%, 100% { transform: translateX(-50%) translateY(0); }
             50% { transform: translateX(-50%) translateY(-8px); }
         }
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-        @keyframes typingBounce {
-            0%, 60%, 100% { transform: translateY(0); }
-            30% { transform: translateY(-4px); }
-        }
+
         @keyframes scrollTestimonials {
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); }
@@ -993,13 +844,6 @@
             .form-row { grid-template-columns: 1fr; }
             .section-padding { padding: 4rem 0; }
             .testimonial-card { flex: 0 0 300px; padding: 1.5rem; }
-            #minerva-chat-window {
-                right: 0;
-                bottom: 0;
-                width: 100%;
-                height: 100%;
-                border-radius: 0;
-            }
         }
         @media (max-width: 480px) {
             .gallery-grid { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
@@ -1499,7 +1343,7 @@
                     </div>
                     <div class="contact-info-block">
                         <h3>FIND US ON FACEBOOK</h3>
-                        <a href="https://www.facebook.com/FreedomPainting" target="_blank" rel="noopener">facebook.com/FreedomPainting</a>
+                        <a href="https://www.facebook.com/freedompainting207" target="_blank" rel="noopener">facebook.com/freedompainting207</a>
                     </div>
                     <div class="contact-badge">★ 100% RECOMMENDED &bull; 58 REVIEWS</div>
                 </div>
@@ -1587,30 +1431,6 @@
     </footer>
 
     <!-- ============================================
-         CHAT WIDGET
-         ============================================ -->
-    <button id="minerva-chat-btn" onclick="toggleChat()" aria-label="Open chat">💬</button>
-    <div id="minerva-chat-window">
-        <div id="minerva-chat-header">
-            <div class="chat-header-dot"></div>
-            <div class="chat-header-info">
-                <h4>FREEDOM PAINTING</h4>
-                <p>Usually replies instantly</p>
-            </div>
-        </div>
-        <div id="minerva-chat-messages">
-            <div class="msg bot-msg">Hi there! I'm the Freedom Painting assistant. I can help you with quotes, scheduling, or answer questions about our services. What can I help you with today?</div>
-        </div>
-        <div class="typing-indicator" id="typingIndicator">
-            <span></span><span></span><span></span>
-        </div>
-        <div id="minerva-chat-input-area">
-            <input type="text" id="minerva-user-input" placeholder="Ask about our services..." onkeypress="handleKeyPress(event)">
-            <button id="minerva-send-btn" onclick="sendMessage()">SEND</button>
-        </div>
-    </div>
-
-    <!-- ============================================
          JAVASCRIPT
          ============================================ -->
     <script>
@@ -1694,9 +1514,9 @@
             if (e.key === 'ArrowRight') navLightbox(1);
         });
 
-        // ---- CONTACT FORM ----
-        // IMPORTANT: Update this URL to your Render backend URL
-        const BACKEND_URL = 'https://minerva-bot.onrender.com';
+        // ---- CONTACT FORM (FORMSPREE) ----
+        // IMPORTANT: Replace YOUR_FORM_ID with your actual Formspree form ID
+        const FORMSPREE_URL = 'https://formspree.io/f/xdawlbal';
 
         async function submitContactForm(e) {
             e.preventDefault();
@@ -1704,22 +1524,16 @@
             btn.disabled = true;
             btn.textContent = 'SENDING...';
 
-            const formData = {
-                name: document.getElementById('cf-name').value,
-                phone: document.getElementById('cf-phone').value,
-                email: document.getElementById('cf-email').value,
-                service: document.getElementById('cf-service').value,
-                message: document.getElementById('cf-message').value
-            };
+            const form = document.getElementById('contactForm');
+            const formData = new FormData(form);
 
             try {
-                const resp = await fetch(BACKEND_URL + '/contact', {
+                const resp = await fetch(FORMSPREE_URL, {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(formData)
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
                 });
-                const data = await resp.json();
-                if (data.success) {
+                if (resp.ok) {
                     document.getElementById('contactForm').style.display = 'none';
                     document.getElementById('formSuccess').classList.add('active');
                 } else {
@@ -1730,78 +1544,8 @@
             } catch (err) {
                 btn.disabled = false;
                 btn.textContent = 'SEND QUOTE REQUEST';
-                alert('Could not reach the server. Please call us directly at (207) 502-9970.');
+                alert('Could not send the form. Please call us directly at (207) 502-9970.');
             }
-        }
-
-        // ---- CHAT WIDGET ----
-        let chatUserId = localStorage.getItem('freedom_chat_id');
-        if (!chatUserId) {
-            chatUserId = 'web_' + Math.random().toString(36).substr(2, 9);
-            localStorage.setItem('freedom_chat_id', chatUserId);
-        }
-
-        function toggleChat() {
-            const chatWindow = document.getElementById('minerva-chat-window');
-            const chatBtn = document.getElementById('minerva-chat-btn');
-            const isOpen = chatWindow.style.display === 'flex';
-            chatWindow.style.display = isOpen ? 'none' : 'flex';
-            chatBtn.classList.toggle('active', !isOpen);
-            chatBtn.textContent = isOpen ? '💬' : '✕';
-        }
-
-        function handleKeyPress(event) {
-            if (event.key === 'Enter') sendMessage();
-        }
-
-        async function sendMessage() {
-            const inputField = document.getElementById('minerva-user-input');
-            const messageText = inputField.value.trim();
-            if (!messageText) return;
-
-            appendMessage(messageText, 'user-msg');
-            inputField.value = '';
-
-            // Show typing indicator
-            document.getElementById('typingIndicator').style.display = 'block';
-            scrollChat();
-
-            try {
-                const response = await fetch(BACKEND_URL + '/chat', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        user_id: chatUserId,
-                        message: messageText
-                    })
-                });
-
-                const data = await response.json();
-                document.getElementById('typingIndicator').style.display = 'none';
-
-                if (data.reply) {
-                    appendMessage(data.reply, 'bot-msg');
-                } else {
-                    appendMessage("Sorry, I'm having trouble right now. Please call us at (207) 502-9970.", 'bot-msg');
-                }
-            } catch (error) {
-                document.getElementById('typingIndicator').style.display = 'none';
-                appendMessage("Can't reach the server right now. Please call us directly at (207) 502-9970.", 'bot-msg');
-            }
-        }
-
-        function appendMessage(text, className) {
-            const msgBox = document.createElement('div');
-            msgBox.className = 'msg ' + className;
-            msgBox.textContent = text;
-            const chatArea = document.getElementById('minerva-chat-messages');
-            chatArea.appendChild(msgBox);
-            scrollChat();
-        }
-
-        function scrollChat() {
-            const chatArea = document.getElementById('minerva-chat-messages');
-            chatArea.scrollTop = chatArea.scrollHeight;
         }
     </script>
 </body>
