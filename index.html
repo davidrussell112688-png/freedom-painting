@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freedom Painting | Residential Painting Professionals — Houlton, ME</title>
-    <meta name="description" content="Freedom Painting — professional residential painting serving Houlton, Aroostook County, and surrounding areas in Maine. Interior, exterior, cabinets, decks, and more. 100% recommended. Call (207) 502-9970.">
-    <meta name="keywords" content="painting, house painting, Houlton Maine, Aroostook County, residential painting, exterior painting, interior painting, cabinet painting, deck staining, Freedom Painting">
-    <meta property="og:title" content="Freedom Painting | Houlton, ME">
-    <meta property="og:description" content="Residential painting professionals serving the Houlton area. 100% recommendation rate. Call (207) 502-9970.">
-    <meta property="og:image" content="images/hero-victorian.jpg">
+    <title>Freedom Painting | Veteran Owned Residential Painting — Greater Houlton, ME</title>
+    <meta name="description" content="Freedom Painting — veteran owned, licensed residential painting company serving the Greater Houlton area in Maine. Interior and exterior painting. 100% recommended. Call or text (207) 502-9970.">
+    <meta name="keywords" content="painting, veteran owned, house painting, Houlton Maine, Aroostook County, residential painting, exterior painting, interior painting, licensed painter Maine, Freedom Painting">
+    <meta property="og:title" content="Freedom Painting | Veteran Owned — Houlton, ME">
+    <meta property="og:description" content="Veteran owned residential painting serving the Greater Houlton area. Licensed in the State of Maine. 100% recommendation rate. Call or text (207) 502-9970.">
+    <meta property="og:image" content="images/hero-barn-sign.jpg">
     <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <style>
-        /* ============================================
-           CSS CUSTOM PROPERTIES
-           ============================================ */
         :root {
             --navy: #152238;
             --navy-light: #1E3352;
@@ -39,979 +36,201 @@
             --font-body: 'Lora', Georgia, serif;
             --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
-
-        /* ============================================
-           RESET & BASE
-           ============================================ */
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         html { scroll-behavior: smooth; font-size: 16px; }
-        body {
-            font-family: var(--font-body);
-            color: var(--text-dark);
-            background: var(--white);
-            line-height: 1.7;
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-        }
+        body { font-family: var(--font-body); color: var(--text-dark); background: var(--white); line-height: 1.7; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
         img { max-width: 100%; height: auto; display: block; }
         a { color: inherit; text-decoration: none; }
         button { cursor: pointer; font-family: inherit; }
+        h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; letter-spacing: 0.04em; line-height: 1.1; }
+        .section-label { font-family: var(--font-display); font-size: 0.875rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 0.5rem; display: block; }
+        .section-title { font-size: clamp(2.5rem, 5vw, 4rem); color: var(--navy); margin-bottom: 1rem; }
+        .section-subtitle { font-size: 1.1rem; color: var(--text-mid); max-width: 600px; line-height: 1.8; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+        .section-padding { padding: 6rem 0; }
+        .star-divider { display: flex; align-items: center; justify-content: center; gap: 1rem; margin: 1.5rem 0; }
+        .star-divider::before, .star-divider::after { content: ''; width: 60px; height: 2px; background: var(--red); }
+        .star-divider span { color: var(--red); font-size: 1.2rem; }
 
-        /* ============================================
-           TYPOGRAPHY
-           ============================================ */
-        h1, h2, h3, h4 {
-            font-family: var(--font-display);
-            font-weight: 400;
-            letter-spacing: 0.04em;
-            line-height: 1.1;
-        }
-        .section-label {
-            font-family: var(--font-display);
-            font-size: 0.875rem;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: var(--red);
-            margin-bottom: 0.5rem;
-            display: block;
-        }
-        .section-title {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            color: var(--navy);
-            margin-bottom: 1rem;
-        }
-        .section-subtitle {
-            font-size: 1.1rem;
-            color: var(--text-mid);
-            max-width: 600px;
-            line-height: 1.8;
-        }
-
-        /* ============================================
-           LAYOUT UTILITIES
-           ============================================ */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-        .section-padding {
-            padding: 6rem 0;
-        }
-
-        /* ============================================
-           STAR DIVIDER
-           ============================================ */
-        .star-divider {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            margin: 1.5rem 0;
-        }
-        .star-divider::before, .star-divider::after {
-            content: '';
-            width: 60px;
-            height: 2px;
-            background: var(--red);
-        }
-        .star-divider span {
-            color: var(--red);
-            font-size: 1.2rem;
-        }
-
-        /* ============================================
-           NAVIGATION
-           ============================================ */
-        .nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 900;
-            background: transparent;
-            transition: var(--transition);
-        }
-        .nav.scrolled {
-            background: var(--navy);
-            box-shadow: var(--shadow-md);
-        }
-        .nav-inner {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 1rem 1.5rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .nav-logo {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-        .nav-logo img {
-            height: 50px;
-            width: auto;
-            border-radius: 4px;
-        }
-        .nav-logo-text {
-            font-family: var(--font-display);
-            font-size: 1.5rem;
-            color: var(--white);
-            letter-spacing: 0.06em;
-        }
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-            list-style: none;
-        }
-        .nav-links a {
-            font-family: var(--font-display);
-            font-size: 1rem;
-            letter-spacing: 0.1em;
-            color: var(--white);
-            opacity: 0.85;
-            transition: var(--transition);
-            position: relative;
-        }
+        /* NAV */
+        .nav { position: fixed; top: 0; left: 0; width: 100%; z-index: 900; background: transparent; transition: var(--transition); }
+        .nav.scrolled { background: var(--navy); box-shadow: var(--shadow-md); }
+        .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.5rem; max-width: 1200px; margin: 0 auto; }
+        .nav-logo { display: flex; align-items: center; gap: 0.75rem; }
+        .nav-logo img { height: 50px; width: auto; border-radius: 4px; }
+        .nav-logo-text { font-family: var(--font-display); font-size: 1.5rem; color: var(--white); letter-spacing: 0.06em; }
+        .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
+        .nav-links a { font-family: var(--font-display); font-size: 1rem; letter-spacing: 0.1em; color: var(--white); opacity: 0.85; transition: var(--transition); position: relative; }
         .nav-links a:hover { opacity: 1; }
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--red);
-            transition: var(--transition);
-        }
+        .nav-links a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--red); transition: var(--transition); }
         .nav-links a:hover::after { width: 100%; }
-        .nav-cta {
-            background: var(--red) !important;
-            color: var(--white) !important;
-            padding: 0.6rem 1.5rem !important;
-            border-radius: var(--radius);
-            opacity: 1 !important;
-            font-family: var(--font-display) !important;
-            letter-spacing: 0.1em !important;
-            transition: var(--transition);
-        }
+        .nav-cta { background: var(--red) !important; color: var(--white) !important; padding: 0.6rem 1.5rem !important; border-radius: var(--radius); opacity: 1 !important; }
         .nav-cta:hover { background: var(--red-dark) !important; }
         .nav-cta::after { display: none !important; }
+        .nav-hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; padding: 5px; }
+        .nav-hamburger span { width: 28px; height: 2px; background: var(--white); transition: var(--transition); }
 
-        /* Mobile hamburger */
-        .nav-hamburger {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            background: none;
-            border: none;
-            padding: 5px;
-        }
-        .nav-hamburger span {
-            width: 28px;
-            height: 2px;
-            background: var(--white);
-            transition: var(--transition);
-        }
-
-        /* ============================================
-           HERO SECTION
-           ============================================ */
-        .hero {
-            position: relative;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            overflow: hidden;
-        }
-        .hero-bg {
-            position: absolute;
-            inset: 0;
-            background: url('images/hero-victorian.jpg') center/cover no-repeat;
-        }
-        .hero-bg::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(
-                135deg,
-                rgba(21, 34, 56, 0.92) 0%,
-                rgba(21, 34, 56, 0.7) 40%,
-                rgba(21, 34, 56, 0.4) 100%
-            );
-        }
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 700px;
-            padding: 8rem 0 4rem;
-        }
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: rgba(191, 27, 44, 0.15);
-            border: 1px solid rgba(191, 27, 44, 0.3);
-            color: var(--white);
-            padding: 0.5rem 1rem;
-            border-radius: 2px;
-            font-family: var(--font-display);
-            font-size: 0.8rem;
-            letter-spacing: 0.15em;
-            margin-bottom: 1.5rem;
-            animation: fadeInUp 0.8s ease both;
-        }
-        .hero-badge::before {
-            content: '★';
-            color: var(--red-light);
-        }
-        .hero h1 {
-            font-size: clamp(3rem, 7vw, 5.5rem);
-            color: var(--white);
-            line-height: 0.95;
-            margin-bottom: 1.5rem;
-            animation: fadeInUp 0.8s ease 0.15s both;
-        }
-        .hero h1 .accent {
-            color: var(--red-light);
-        }
-        .hero-description {
-            font-size: 1.15rem;
-            color: rgba(255,255,255,0.8);
-            line-height: 1.8;
-            margin-bottom: 2.5rem;
-            max-width: 520px;
-            animation: fadeInUp 0.8s ease 0.3s both;
-        }
-        .hero-actions {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-            animation: fadeInUp 0.8s ease 0.45s both;
-        }
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-family: var(--font-display);
-            font-size: 1.05rem;
-            letter-spacing: 0.1em;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: var(--radius);
-            transition: var(--transition);
-            text-align: center;
-        }
-        .btn-primary {
-            background: var(--red);
-            color: var(--white);
-        }
+        /* HERO */
+        .hero { position: relative; min-height: 100vh; display: flex; align-items: center; overflow: hidden; }
+        .hero-bg { position: absolute; inset: 0; background: url('images/hero-barn-sign.jpg') center/cover no-repeat; }
+        .hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(21,34,56,0.92) 0%, rgba(21,34,56,0.7) 40%, rgba(21,34,56,0.4) 100%); }
+        .hero-content { position: relative; z-index: 2; max-width: 700px; padding: 8rem 0 4rem; }
+        .hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(191,27,44,0.15); border: 1px solid rgba(191,27,44,0.3); color: var(--white); padding: 0.5rem 1rem; border-radius: 2px; font-family: var(--font-display); font-size: 0.8rem; letter-spacing: 0.15em; margin-bottom: 1.5rem; animation: fadeInUp 0.8s ease both; }
+        .hero-badge::before { content: '\2605'; color: var(--red-light); }
+        .hero h1 { font-size: clamp(3rem, 7vw, 5.5rem); color: var(--white); line-height: 0.95; margin-bottom: 1.5rem; animation: fadeInUp 0.8s ease 0.15s both; }
+        .hero h1 .accent { color: var(--red-light); }
+        .hero-description { font-size: 1.15rem; color: rgba(255,255,255,0.8); line-height: 1.8; margin-bottom: 2.5rem; max-width: 520px; animation: fadeInUp 0.8s ease 0.3s both; }
+        .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; animation: fadeInUp 0.8s ease 0.45s both; }
+        .btn { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--font-display); font-size: 1.05rem; letter-spacing: 0.1em; padding: 1rem 2rem; border: none; border-radius: var(--radius); transition: var(--transition); text-align: center; }
+        .btn-primary { background: var(--red); color: var(--white); }
         .btn-primary:hover { background: var(--red-dark); transform: translateY(-2px); box-shadow: var(--shadow-md); }
-        .btn-outline {
-            background: transparent;
-            color: var(--white);
-            border: 2px solid rgba(255,255,255,0.4);
-        }
+        .btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.4); }
         .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.08); }
+        .btn-facebook { background: #1877F2; color: var(--white); }
+        .btn-facebook:hover { background: #1565C0; transform: translateY(-2px); }
+        .hero-stats { display: flex; gap: 3rem; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.15); animation: fadeInUp 0.8s ease 0.6s both; }
+        .hero-stat-number { font-family: var(--font-display); font-size: 2.5rem; color: var(--white); line-height: 1; }
+        .hero-stat-label { font-size: 0.85rem; color: rgba(255,255,255,0.6); letter-spacing: 0.03em; }
+        .hero-scroll { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; color: rgba(255,255,255,0.5); font-family: var(--font-display); font-size: 0.7rem; letter-spacing: 0.15em; animation: float 2s ease-in-out infinite; }
+        .hero-scroll-line { width: 1px; height: 40px; background: linear-gradient(to bottom, rgba(255,255,255,0.5), transparent); }
 
-        .hero-stats {
-            display: flex;
-            gap: 3rem;
-            margin-top: 4rem;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255,255,255,0.15);
-            animation: fadeInUp 0.8s ease 0.6s both;
-        }
-        .hero-stat-number {
-            font-family: var(--font-display);
-            font-size: 2.5rem;
-            color: var(--white);
-            line-height: 1;
-        }
-        .hero-stat-label {
-            font-size: 0.85rem;
-            color: rgba(255,255,255,0.6);
-            letter-spacing: 0.03em;
-        }
+        /* TRUST BANNER */
+        .trust-banner { background: var(--navy); padding: 3rem 0; text-align: center; }
+        .trust-items { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+        .trust-item { display: flex; align-items: center; gap: 0.75rem; color: var(--white); }
+        .trust-icon { font-size: 1.8rem; }
+        .trust-text { font-family: var(--font-display); font-size: 1.1rem; letter-spacing: 0.08em; text-align: left; }
+        .trust-text small { display: block; font-family: var(--font-body); font-size: 0.7rem; color: rgba(255,255,255,0.5); letter-spacing: 0.02em; }
 
-        /* Scroll indicator */
-        .hero-scroll {
-            position: absolute;
-            bottom: 2rem;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 2;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-            color: rgba(255,255,255,0.5);
-            font-family: var(--font-display);
-            font-size: 0.7rem;
-            letter-spacing: 0.15em;
-            animation: float 2s ease-in-out infinite;
-        }
-        .hero-scroll-line {
-            width: 1px;
-            height: 40px;
-            background: linear-gradient(to bottom, rgba(255,255,255,0.5), transparent);
-        }
-
-        /* ============================================
-           SERVICES SECTION
-           ============================================ */
+        /* SERVICES */
         .services { background: var(--cream); }
         .services-header { text-align: center; margin-bottom: 4rem; }
         .services-header .section-subtitle { margin: 0 auto; }
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-        }
-        .service-card {
-            background: var(--white);
-            padding: 2.5rem 2rem;
-            border-radius: var(--radius);
-            box-shadow: var(--shadow-sm);
-            transition: var(--transition);
-            position: relative;
-            overflow: hidden;
-        }
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: var(--red);
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: var(--transition);
-        }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+        .service-card { background: var(--white); padding: 2.5rem 2rem; border-radius: var(--radius); box-shadow: var(--shadow-sm); transition: var(--transition); position: relative; overflow: hidden; }
+        .service-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: var(--red); transform: scaleX(0); transform-origin: left; transition: var(--transition); }
         .service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
         .service-card:hover::before { transform: scaleX(1); }
-        .service-icon {
-            width: 48px;
-            height: 48px;
-            background: var(--blue-tint);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 1.5rem;
-            font-size: 1.3rem;
-        }
-        .service-card h3 {
-            font-size: 1.5rem;
-            color: var(--navy);
-            margin-bottom: 0.75rem;
-        }
-        .service-card p {
-            color: var(--text-mid);
-            font-size: 0.95rem;
-            line-height: 1.7;
-        }
+        .service-icon { width: 48px; height: 48px; background: var(--blue-tint); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; font-size: 1.3rem; }
+        .service-card h3 { font-size: 1.5rem; color: var(--navy); margin-bottom: 0.75rem; }
+        .service-card p { color: var(--text-mid); font-size: 0.95rem; line-height: 1.7; }
 
-        /* ============================================
-           GALLERY SECTION
-           ============================================ */
+        /* GALLERY */
         .gallery-header { text-align: center; margin-bottom: 3rem; }
         .gallery-header .section-subtitle { margin: 0 auto; }
-        .gallery-filters {
-            display: flex;
-            justify-content: center;
-            gap: 0.75rem;
-            margin-bottom: 2.5rem;
-            flex-wrap: wrap;
-        }
-        .gallery-filter-btn {
-            font-family: var(--font-display);
-            font-size: 0.9rem;
-            letter-spacing: 0.1em;
-            padding: 0.5rem 1.25rem;
-            background: transparent;
-            border: 1px solid var(--cream-dark);
-            border-radius: 2px;
-            color: var(--text-mid);
-            transition: var(--transition);
-        }
-        .gallery-filter-btn.active,
-        .gallery-filter-btn:hover {
-            background: var(--navy);
-            border-color: var(--navy);
-            color: var(--white);
-        }
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 0.75rem;
-        }
-        .gallery-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: var(--radius);
-            cursor: pointer;
-            aspect-ratio: 1;
-        }
-        .gallery-item.wide { grid-column: span 2; aspect-ratio: 2/1; }
-        .gallery-item.tall { grid-row: span 2; aspect-ratio: auto; }
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .gallery-item::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to top, rgba(21,34,56,0.6), transparent 50%);
-            opacity: 0;
-            transition: var(--transition);
-        }
-        .gallery-item:hover img { transform: scale(1.08); }
-        .gallery-item:hover::after { opacity: 1; }
-        .gallery-item-label {
-            position: absolute;
-            bottom: 1rem;
-            left: 1rem;
-            color: var(--white);
-            font-family: var(--font-display);
-            font-size: 0.9rem;
-            letter-spacing: 0.08em;
-            z-index: 2;
-            opacity: 0;
-            transform: translateY(8px);
-            transition: var(--transition);
-        }
-        .gallery-item:hover .gallery-item-label { opacity: 1; transform: translateY(0); }
+        .gallery-tabs { display: flex; justify-content: center; gap: 0.75rem; margin-bottom: 2.5rem; flex-wrap: wrap; }
+        .gallery-tab { font-family: var(--font-display); font-size: 0.9rem; letter-spacing: 0.1em; padding: 0.5rem 1.25rem; background: transparent; border: 1px solid var(--cream-dark); border-radius: 2px; color: var(--text-mid); transition: var(--transition); }
+        .gallery-tab.active, .gallery-tab:hover { background: var(--navy); border-color: var(--navy); color: var(--white); }
+        .gallery-section { display: none; }
+        .gallery-section.active { display: block; }
+
+        /* Before & After */
+        .ba-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+        .ba-pair { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); background: var(--white); }
+        .ba-images { display: grid; grid-template-columns: 1fr 1fr; }
+        .ba-side { position: relative; overflow: hidden; aspect-ratio: 4/3; }
+        .ba-images img { width: 100%; height: 100%; object-fit: cover; }
+        .ba-label { position: absolute; bottom: 0; left: 0; right: 0; padding: 0.4rem 0.75rem; font-family: var(--font-display); font-size: 0.7rem; letter-spacing: 0.12em; text-align: center; color: var(--white); }
+        .ba-label.before { background: rgba(0,0,0,0.6); }
+        .ba-label.after { background: rgba(191,27,44,0.85); }
+        .ba-caption { padding: 0.75rem 1rem; font-family: var(--font-display); font-size: 0.85rem; letter-spacing: 0.06em; color: var(--navy); text-align: center; }
+
+        /* Projects grid */
+        .projects-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
+        .project-item { position: relative; overflow: hidden; border-radius: var(--radius); cursor: pointer; aspect-ratio: 1; }
+        .project-item.wide { grid-column: span 2; aspect-ratio: 2/1; }
+        .project-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); }
+        .project-item::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(21,34,56,0.6), transparent 50%); opacity: 0; transition: var(--transition); }
+        .project-item:hover img { transform: scale(1.08); }
+        .project-item:hover::after { opacity: 1; }
+        .project-label { position: absolute; bottom: 1rem; left: 1rem; color: var(--white); font-family: var(--font-display); font-size: 0.9rem; letter-spacing: 0.08em; z-index: 2; opacity: 0; transform: translateY(8px); transition: var(--transition); }
+        .project-item:hover .project-label { opacity: 1; transform: translateY(0); }
 
         /* Lightbox */
-        .lightbox {
-            position: fixed;
-            inset: 0;
-            z-index: 2000;
-            background: rgba(0,0,0,0.92);
-            display: none;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-        }
+        .lightbox { position: fixed; inset: 0; z-index: 2000; background: rgba(0,0,0,0.92); display: none; align-items: center; justify-content: center; padding: 2rem; }
         .lightbox.active { display: flex; }
-        .lightbox img {
-            max-width: 90vw;
-            max-height: 85vh;
-            object-fit: contain;
-            border-radius: var(--radius);
-        }
-        .lightbox-close {
-            position: absolute;
-            top: 1.5rem;
-            right: 1.5rem;
-            background: none;
-            border: none;
-            color: var(--white);
-            font-size: 2rem;
-            opacity: 0.7;
-            transition: var(--transition);
-        }
+        .lightbox img { max-width: 90vw; max-height: 85vh; object-fit: contain; border-radius: var(--radius); }
+        .lightbox-close { position: absolute; top: 1.5rem; right: 1.5rem; background: none; border: none; color: var(--white); font-size: 2rem; opacity: 0.7; transition: var(--transition); }
         .lightbox-close:hover { opacity: 1; }
-        .lightbox-nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(255,255,255,0.1);
-            border: none;
-            color: var(--white);
-            font-size: 1.5rem;
-            padding: 1rem;
-            border-radius: 50%;
-            transition: var(--transition);
-        }
+        .lightbox-nav { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.1); border: none; color: var(--white); font-size: 1.5rem; padding: 1rem; border-radius: 50%; transition: var(--transition); }
         .lightbox-nav:hover { background: rgba(255,255,255,0.2); }
         .lightbox-prev { left: 1.5rem; }
         .lightbox-next { right: 1.5rem; }
 
-        /* ============================================
-           TESTIMONIALS SECTION
-           ============================================ */
+        /* SOCIAL BANNER */
+        .social-banner { background: var(--red); padding: 3rem 0; text-align: center; }
+        .social-banner h3 { font-size: 2rem; color: var(--white); margin-bottom: 0.5rem; }
+        .social-banner p { color: rgba(255,255,255,0.85); margin-bottom: 1.5rem; font-size: 1rem; }
+
+        /* TESTIMONIALS */
         .testimonials { background: var(--navy); color: var(--white); overflow: hidden; }
         .testimonials .section-label { color: var(--red-light); }
         .testimonials .section-title { color: var(--white); }
         .testimonials-header { text-align: center; margin-bottom: 4rem; }
         .testimonials-header .section-subtitle { color: rgba(255,255,255,0.6); margin: 0 auto; }
-        .testimonials-track-wrapper {
-            position: relative;
-            overflow: hidden;
-        }
-        .testimonials-track {
-            display: flex;
-            gap: 1.5rem;
-            animation: scrollTestimonials 40s linear infinite;
-        }
+        .testimonials-track-wrapper { position: relative; overflow: hidden; }
+        .testimonials-track { display: flex; gap: 1.5rem; animation: scrollTestimonials 20s linear infinite; }
         .testimonials-track:hover { animation-play-state: paused; }
-        .testimonial-card {
-            flex: 0 0 380px;
-            background: var(--navy-light);
-            border-radius: var(--radius);
-            padding: 2rem;
-            position: relative;
-        }
-        .testimonial-stars {
-            color: var(--gold);
-            font-size: 0.9rem;
-            letter-spacing: 2px;
-            margin-bottom: 1rem;
-        }
-        .testimonial-text {
-            font-size: 0.95rem;
-            line-height: 1.8;
-            color: rgba(255,255,255,0.85);
-            margin-bottom: 1.5rem;
-            font-style: italic;
-        }
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-        .testimonial-avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: var(--red);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: var(--font-display);
-            font-size: 1rem;
-            color: var(--white);
-        }
-        .testimonial-name {
-            font-family: var(--font-display);
-            font-size: 1rem;
-            letter-spacing: 0.05em;
-        }
-        .testimonial-date {
-            font-size: 0.8rem;
-            color: rgba(255,255,255,0.4);
-        }
-        .testimonial-source {
-            position: absolute;
-            top: 1.5rem;
-            right: 1.5rem;
-            font-size: 0.75rem;
-            color: rgba(255,255,255,0.3);
-            font-family: var(--font-display);
-            letter-spacing: 0.08em;
-        }
+        .testimonial-card { flex: 0 0 380px; background: var(--navy-light); border-radius: var(--radius); padding: 2rem; position: relative; }
+        .testimonial-stars { color: var(--gold); font-size: 0.9rem; letter-spacing: 2px; margin-bottom: 1rem; }
+        .testimonial-text { font-size: 0.95rem; line-height: 1.8; color: rgba(255,255,255,0.85); margin-bottom: 1.5rem; font-style: italic; }
+        .testimonial-author { display: flex; align-items: center; gap: 0.75rem; }
+        .testimonial-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--red); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 1rem; color: var(--white); }
+        .testimonial-name { font-family: var(--font-display); font-size: 1rem; letter-spacing: 0.05em; }
+        .testimonial-date { font-size: 0.8rem; color: rgba(255,255,255,0.4); }
+        .testimonial-source { position: absolute; top: 1.5rem; right: 1.5rem; font-size: 0.75rem; color: rgba(255,255,255,0.3); font-family: var(--font-display); letter-spacing: 0.08em; }
 
-        /* ============================================
-           CONTACT SECTION
-           ============================================ */
+        /* CONTACT */
         .contact { background: var(--cream); }
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: start;
-        }
-        .contact-info-block {
-            margin-bottom: 2rem;
-        }
-        .contact-info-block h3 {
-            font-size: 1.3rem;
-            color: var(--navy);
-            margin-bottom: 0.5rem;
-        }
-        .contact-info-block p, .contact-info-block a {
-            color: var(--text-mid);
-            font-size: 1rem;
-            line-height: 1.7;
-        }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+        .contact-info-block { margin-bottom: 2rem; }
+        .contact-info-block h3 { font-size: 1.3rem; color: var(--navy); margin-bottom: 0.5rem; }
+        .contact-info-block p, .contact-info-block a { color: var(--text-mid); font-size: 1rem; line-height: 1.7; }
         .contact-info-block a:hover { color: var(--red); }
-        .contact-phone {
-            font-family: var(--font-display);
-            font-size: 2rem !important;
-            color: var(--navy) !important;
-            letter-spacing: 0.04em;
-        }
-        .contact-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.4rem;
-            background: rgba(191, 27, 44, 0.08);
-            border: 1px solid rgba(191, 27, 44, 0.15);
-            color: var(--red);
-            padding: 0.4rem 0.75rem;
-            border-radius: 2px;
-            font-family: var(--font-display);
-            font-size: 0.75rem;
-            letter-spacing: 0.12em;
-            margin-top: 1rem;
-        }
-        .contact-form-card {
-            background: var(--white);
-            padding: 2.5rem;
-            border-radius: var(--radius);
-            box-shadow: var(--shadow-md);
-        }
-        .contact-form-card h3 {
-            font-size: 1.8rem;
-            color: var(--navy);
-            margin-bottom: 0.5rem;
-        }
-        .contact-form-card > p {
-            color: var(--text-mid);
-            margin-bottom: 2rem;
-            font-size: 0.95rem;
-        }
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-        }
-        .form-group {
-            margin-bottom: 1.25rem;
-        }
-        .form-group.full { grid-column: 1 / -1; }
-        .form-group label {
-            display: block;
-            font-family: var(--font-display);
-            font-size: 0.8rem;
-            letter-spacing: 0.1em;
-            color: var(--navy);
-            margin-bottom: 0.4rem;
-        }
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 0.75rem 1rem;
-            border: 1px solid var(--cream-dark);
-            border-radius: var(--radius);
-            font-family: var(--font-body);
-            font-size: 0.95rem;
-            color: var(--text-dark);
-            background: var(--cream);
-            transition: var(--transition);
-        }
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--navy);
-            background: var(--white);
-        }
+        .contact-phone { font-family: var(--font-display); font-size: 2rem !important; color: var(--navy) !important; letter-spacing: 0.04em; }
+        .contact-badge { display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(191,27,44,0.08); border: 1px solid rgba(191,27,44,0.15); color: var(--red); padding: 0.4rem 0.75rem; border-radius: 2px; font-family: var(--font-display); font-size: 0.75rem; letter-spacing: 0.12em; margin-top: 0.5rem; margin-right: 0.5rem; }
+        .contact-form-card { background: var(--white); padding: 2.5rem; border-radius: var(--radius); box-shadow: var(--shadow-md); }
+        .contact-form-card h3 { font-size: 1.8rem; color: var(--navy); margin-bottom: 0.5rem; }
+        .contact-form-card > p { color: var(--text-mid); margin-bottom: 2rem; font-size: 0.95rem; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .form-group { margin-bottom: 1.25rem; }
+        .form-group label { display: block; font-family: var(--font-display); font-size: 0.8rem; letter-spacing: 0.1em; color: var(--navy); margin-bottom: 0.4rem; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--cream-dark); border-radius: var(--radius); font-family: var(--font-body); font-size: 0.95rem; color: var(--text-dark); background: var(--cream); transition: var(--transition); }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--navy); background: var(--white); }
         .form-group textarea { resize: vertical; min-height: 120px; }
-        .form-submit {
-            width: 100%;
-            font-family: var(--font-display);
-            font-size: 1.05rem;
-            letter-spacing: 0.1em;
-            padding: 1rem;
-            background: var(--red);
-            color: var(--white);
-            border: none;
-            border-radius: var(--radius);
-            transition: var(--transition);
-        }
+        .form-submit { width: 100%; font-family: var(--font-display); font-size: 1.05rem; letter-spacing: 0.1em; padding: 1rem; background: var(--red); color: var(--white); border: none; border-radius: var(--radius); transition: var(--transition); }
         .form-submit:hover { background: var(--red-dark); }
         .form-submit:disabled { opacity: 0.6; cursor: not-allowed; }
-        .form-success {
-            display: none;
-            text-align: center;
-            padding: 2rem;
-        }
+        .form-success { display: none; text-align: center; padding: 2rem; }
         .form-success.active { display: block; }
-        .form-success h4 {
-            font-size: 1.5rem;
-            color: var(--navy);
-            margin-bottom: 0.5rem;
-        }
+        .form-success h4 { font-size: 1.5rem; color: var(--navy); margin-bottom: 0.5rem; }
 
-        /* ============================================
-           FOOTER
-           ============================================ */
-        .footer {
-            background: var(--navy);
-            color: var(--white);
-            padding: 4rem 0 2rem;
-        }
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            gap: 3rem;
-            margin-bottom: 3rem;
-        }
-        .footer-brand p {
-            color: rgba(255,255,255,0.6);
-            font-size: 0.9rem;
-            line-height: 1.7;
-            margin-top: 1rem;
-            max-width: 360px;
-        }
-        .footer h4 {
-            font-size: 1rem;
-            letter-spacing: 0.1em;
-            margin-bottom: 1.25rem;
-            color: var(--white);
-        }
-        .footer-links {
-            list-style: none;
-        }
+        /* FOOTER */
+        .footer { background: var(--navy); color: var(--white); padding: 4rem 0 2rem; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+        .footer-brand p { color: rgba(255,255,255,0.6); font-size: 0.9rem; line-height: 1.7; margin-top: 1rem; max-width: 360px; }
+        .footer h4 { font-size: 1rem; letter-spacing: 0.1em; margin-bottom: 1.25rem; color: var(--white); }
+        .footer-links { list-style: none; }
         .footer-links li { margin-bottom: 0.6rem; }
-        .footer-links a {
-            color: rgba(255,255,255,0.6);
-            font-size: 0.9rem;
-            transition: var(--transition);
-        }
+        .footer-links a { color: rgba(255,255,255,0.6); font-size: 0.9rem; transition: var(--transition); }
         .footer-links a:hover { color: var(--white); }
-        .footer-bottom {
-            border-top: 1px solid rgba(255,255,255,0.1);
-            padding-top: 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 0.8rem;
-            color: rgba(255,255,255,0.4);
-        }
-        .footer-bottom a { color: rgba(255,255,255,0.5); }
-        .footer-bottom a:hover { color: var(--white); }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: rgba(255,255,255,0.4); }
 
-        /* ============================================
-           CHAT WIDGET (RESTYLED FOR FREEDOM PAINTING)
-           ============================================ */
-        #minerva-chat-btn {
-            position: fixed;
-            bottom: 24px;
-            right: 24px;
-            background: var(--red);
-            color: var(--white);
-            border: none;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            font-size: 24px;
-            cursor: pointer;
-            box-shadow: 0 4px 16px rgba(191, 27, 44, 0.4);
-            z-index: 1000;
-            transition: var(--transition);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        #minerva-chat-btn:hover { transform: scale(1.08); box-shadow: 0 6px 24px rgba(191, 27, 44, 0.5); }
-        #minerva-chat-btn.active { background: var(--navy); }
-        #minerva-chat-window {
-            position: fixed;
-            bottom: 96px;
-            right: 24px;
-            width: 380px;
-            height: 520px;
-            background: var(--white);
-            border: 1px solid rgba(0,0,0,0.08);
-            border-radius: 12px;
-            box-shadow: var(--shadow-lg);
-            display: none;
-            flex-direction: column;
-            z-index: 1000;
-            overflow: hidden;
-        }
-        #minerva-chat-header {
-            background: var(--navy);
-            color: var(--white);
-            padding: 1.25rem 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-        .chat-header-dot {
-            width: 10px;
-            height: 10px;
-            background: #34D058;
-            border-radius: 50%;
-            animation: pulse 2s ease-in-out infinite;
-        }
-        .chat-header-info h4 {
-            font-family: var(--font-display);
-            font-size: 1rem;
-            letter-spacing: 0.08em;
-        }
-        .chat-header-info p {
-            font-size: 0.7rem;
-            opacity: 0.6;
-        }
-        #minerva-chat-messages {
-            flex-grow: 1;
-            padding: 1.25rem;
-            overflow-y: auto;
-            background: var(--cream);
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
-        }
-        .msg {
-            padding: 0.75rem 1rem;
-            border-radius: 12px;
-            max-width: 85%;
-            word-wrap: break-word;
-            font-size: 0.9rem;
-            line-height: 1.6;
-        }
-        .user-msg {
-            background: var(--navy);
-            color: white;
-            align-self: flex-end;
-            border-bottom-right-radius: 4px;
-        }
-        .bot-msg {
-            background: var(--white);
-            color: var(--text-dark);
-            align-self: flex-start;
-            border-bottom-left-radius: 4px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-        }
-        .typing-indicator {
-            display: none;
-            align-self: flex-start;
-            padding: 0.75rem 1rem;
-            background: var(--white);
-            border-radius: 12px;
-            border-bottom-left-radius: 4px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-        }
-        .typing-indicator span {
-            display: inline-block;
-            width: 7px;
-            height: 7px;
-            background: var(--text-light);
-            border-radius: 50%;
-            margin: 0 1px;
-            animation: typingBounce 1.4s infinite;
-        }
-        .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
-        .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
-        #minerva-chat-input-area {
-            display: flex;
-            border-top: 1px solid rgba(0,0,0,0.06);
-            padding: 0.75rem;
-            background: var(--white);
-            gap: 0.5rem;
-        }
-        #minerva-user-input {
-            flex-grow: 1;
-            padding: 0.65rem 1rem;
-            border: 1px solid var(--cream-dark);
-            border-radius: 8px;
-            font-family: var(--font-body);
-            font-size: 0.9rem;
-            outline: none;
-            background: var(--cream);
-            transition: var(--transition);
-        }
-        #minerva-user-input:focus { border-color: var(--navy); background: var(--white); }
-        #minerva-send-btn {
-            background: var(--red);
-            color: var(--white);
-            border: none;
-            padding: 0.65rem 1rem;
-            border-radius: 8px;
-            font-family: var(--font-display);
-            letter-spacing: 0.06em;
-            transition: var(--transition);
-        }
-        #minerva-send-btn:hover { background: var(--red-dark); }
+        /* ANIMATIONS */
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes float { 0%, 100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(-8px); } }
+        @keyframes scrollTestimonials { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
 
-        /* ============================================
-           ANIMATIONS
-           ============================================ */
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(24px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes float {
-            0%, 100% { transform: translateX(-50%) translateY(0); }
-            50% { transform: translateX(-50%) translateY(-8px); }
-        }
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-        @keyframes typingBounce {
-            0%, 60%, 100% { transform: translateY(0); }
-            30% { transform: translateY(-4px); }
-        }
-        @keyframes scrollTestimonials {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-
-        /* Scroll reveal */
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.7s ease, transform 0.7s ease;
-        }
-        .reveal.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* ============================================
-           RESPONSIVE
-           ============================================ */
-        @media (max-width: 1024px) {
-            .gallery-grid { grid-template-columns: repeat(3, 1fr); }
-            .gallery-item.wide { grid-column: span 1; aspect-ratio: 1; }
-            .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
-        }
-        @media (max-width: 768px) {
-            .nav-links { display: none; }
-            .nav-links.mobile-open {
-                display: flex;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: var(--navy);
-                padding: 1.5rem;
-                gap: 1rem;
-                box-shadow: var(--shadow-md);
-            }
-            .nav-hamburger { display: flex; }
-            .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
-            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
-            .gallery-item.tall { grid-row: span 1; }
-            .services-grid { grid-template-columns: 1fr; }
-            .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
-            .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
-            .form-row { grid-template-columns: 1fr; }
-            .section-padding { padding: 4rem 0; }
-            .testimonial-card { flex: 0 0 300px; padding: 1.5rem; }
-            #minerva-chat-window {
-                right: 0;
-                bottom: 0;
-                width: 100%;
-                height: 100%;
-                border-radius: 0;
-            }
-        }
-        @media (max-width: 480px) {
-            .gallery-grid { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
-            .hero h1 { font-size: 2.8rem; }
-        }
+        /* RESPONSIVE */
+        @media (max-width: 1024px) { .projects-grid { grid-template-columns: repeat(3, 1fr); } .project-item.wide { grid-column: span 1; aspect-ratio: 1; } .contact-grid { grid-template-columns: 1fr; gap: 3rem; } }
+        @media (max-width: 768px) { .nav-links { display: none; } .nav-links.mobile-open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: var(--navy); padding: 1.5rem; gap: 1rem; box-shadow: var(--shadow-md); } .nav-hamburger { display: flex; } .hero-stats { gap: 1.5rem; flex-wrap: wrap; } .projects-grid { grid-template-columns: repeat(2, 1fr); } .services-grid { grid-template-columns: 1fr; } .footer-grid { grid-template-columns: 1fr; gap: 2rem; } .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; } .form-row { grid-template-columns: 1fr; } .section-padding { padding: 4rem 0; } .testimonial-card { flex: 0 0 300px; padding: 1.5rem; } .trust-items { gap: 1.5rem; } .ba-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 480px) { .projects-grid { grid-template-columns: 1fr 1fr; gap: 0.5rem; } .hero h1 { font-size: 2.8rem; } }
     </style>
 </head>
 <body>
 
-    <!-- ============================================
-         NAVIGATION
-         ============================================ -->
     <nav class="nav" id="nav">
         <div class="nav-inner">
             <a href="#" class="nav-logo">
@@ -1025,784 +244,267 @@
                 <li><a href="#contact">CONTACT</a></li>
                 <li><a href="tel:2075029970" class="nav-cta">CALL NOW</a></li>
             </ul>
-            <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
+            <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
         </div>
     </nav>
 
-    <!-- ============================================
-         HERO SECTION
-         ============================================ -->
     <section class="hero" id="hero">
         <div class="hero-bg"></div>
         <div class="container hero-content">
-            <div class="hero-badge">100% RECOMMENDED ON FACEBOOK</div>
+            <div class="hero-badge">VETERAN OWNED &bull; LICENSED IN THE STATE OF MAINE</div>
             <h1>YOUR HOME<br>DESERVES <span class="accent">BETTER.</span></h1>
-            <p class="hero-description">Professional residential painting serving Houlton, Aroostook County, Presque Isle, and surrounding communities in Maine. We show up, do the work right, and leave your home looking brand new.</p>
+            <p class="hero-description">Veteran owned and operated. Licensed in the State of Maine. Proudly serving the Greater Houlton area with professional residential painting you can trust.</p>
             <div class="hero-actions">
                 <a href="#contact" class="btn btn-primary">GET A FREE QUOTE</a>
                 <a href="tel:2075029970" class="btn btn-outline">CALL (207) 502-9970</a>
             </div>
             <div class="hero-stats">
-                <div>
-                    <div class="hero-stat-number">58+</div>
-                    <div class="hero-stat-label">5-Star Reviews</div>
-                </div>
-                <div>
-                    <div class="hero-stat-number">100%</div>
-                    <div class="hero-stat-label">Recommendation Rate</div>
-                </div>
-                <div>
-                    <div class="hero-stat-number">ME</div>
-                    <div class="hero-stat-label">Locally Owned & Operated</div>
-                </div>
+                <div><div class="hero-stat-number">58+</div><div class="hero-stat-label">5-Star Reviews</div></div>
+                <div><div class="hero-stat-number">100%</div><div class="hero-stat-label">Recommendation Rate</div></div>
+                <div><div class="hero-stat-number">VETERAN</div><div class="hero-stat-label">Owned &amp; Operated</div></div>
             </div>
         </div>
-        <div class="hero-scroll">
-            SCROLL
-            <div class="hero-scroll-line"></div>
-        </div>
+        <div class="hero-scroll">SCROLL<div class="hero-scroll-line"></div></div>
     </section>
 
-    <!-- ============================================
-         SERVICES SECTION
-         ============================================ -->
+    <div class="trust-banner">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item"><span class="trust-icon">&#127894;</span><div class="trust-text">VETERAN OWNED<small>Proudly serving our community</small></div></div>
+                <div class="trust-item"><span class="trust-icon">&#128203;</span><div class="trust-text">LICENSED IN MAINE<small>State licensed professional</small></div></div>
+                <div class="trust-item"><span class="trust-icon">&#11088;</span><div class="trust-text">100% RECOMMENDED<small>58+ five-star reviews on Facebook</small></div></div>
+                <div class="trust-item"><span class="trust-icon">&#127482;&#127480;</span><div class="trust-text">AMERICAN VALUES<small>Honest work. Fair prices. No shortcuts.</small></div></div>
+            </div>
+        </div>
+    </div>
+
     <section class="services section-padding" id="services">
         <div class="container">
             <div class="services-header reveal">
                 <span class="section-label">WHAT WE DO</span>
                 <h2 class="section-title">OUR SERVICES</h2>
-                <div class="star-divider"><span>★</span></div>
-                <p class="section-subtitle">From full exterior repaints to detailed cabinet refinishing, we handle every brush stroke with care. No shortcuts. No cut corners.</p>
+                <div class="star-divider"><span>&#9733;</span></div>
+                <p class="section-subtitle">From full exterior repaints to interior transformations, we handle every brush stroke with care. No shortcuts. No cut corners.</p>
             </div>
             <div class="services-grid">
-                <div class="service-card reveal">
-                    <div class="service-icon">🏠</div>
-                    <h3>EXTERIOR PAINTING</h3>
-                    <p>Siding, trim, shutters, and full exterior repaints. We prep thoroughly — scraping, sanding, priming — because paint only looks as good as the surface underneath. We work on everything from historic Victorians to modern builds.</p>
-                </div>
-                <div class="service-card reveal">
-                    <div class="service-icon">🎨</div>
-                    <h3>INTERIOR PAINTING</h3>
-                    <p>Walls, ceilings, trim, doors, and accent walls. We protect your furniture, cover your floors, and leave zero mess behind. Crisp lines, smooth finishes, and colors that transform your space.</p>
-                </div>
-                <div class="service-card reveal">
-                    <div class="service-icon">🍳</div>
-                    <h3>CABINET REFINISHING</h3>
-                    <p>Give your kitchen a facelift without a full renovation. We sand, prime, and paint cabinets with durable finishes that hold up to daily use. A fraction of the cost of replacement.</p>
-                </div>
-                <div class="service-card reveal">
-                    <div class="service-icon">🪵</div>
-                    <h3>DECK & FENCE STAINING</h3>
-                    <p>Restore your deck or fence to like-new condition. We power wash, prep, and apply high-quality stains and sealers that protect against Maine's harsh weather year after year.</p>
-                </div>
-                <div class="service-card reveal">
-                    <div class="service-icon">🔨</div>
-                    <h3>WALL REPAIR & PREP</h3>
-                    <p>Cracks, holes, water damage, imperfections — we fix it all before any paint goes on. Proper prep is what separates a paint job that lasts from one that peels in a year.</p>
-                </div>
-                <div class="service-card reveal">
-                    <div class="service-icon">🏡</div>
-                    <h3>COLOR CONSULTATION</h3>
-                    <p>Not sure what color to go with? We help you choose palettes that complement your home's architecture, your neighborhood, and your personal taste. We'll get it right.</p>
-                </div>
+                <div class="service-card reveal"><div class="service-icon">&#127968;</div><h3>EXTERIOR PAINTING</h3><p>Siding, trim, shutters, and full exterior repaints. We prep thoroughly &#8212; scraping, sanding, priming &#8212; because paint only looks as good as the surface underneath. We work on everything from historic Victorians to modern builds.</p></div>
+                <div class="service-card reveal"><div class="service-icon">&#127912;</div><h3>INTERIOR PAINTING</h3><p>Walls, ceilings, trim, doors, and accent walls. We protect your furniture, cover your floors, and leave zero mess behind. Crisp lines, smooth finishes, and colors that transform your space.</p></div>
+                <div class="service-card reveal"><div class="service-icon">&#127969;</div><h3>COLOR CONSULTATION</h3><p>Not sure what color to go with? We help you choose palettes that complement your home's architecture, your neighborhood, and your personal taste. We'll get it right.</p></div>
             </div>
         </div>
     </section>
 
-    <!-- ============================================
-         GALLERY SECTION
-         ============================================ -->
     <section class="section-padding" id="gallery">
         <div class="container">
             <div class="gallery-header reveal">
                 <span class="section-label">SEE THE WORK</span>
-                <h2 class="section-title">PROJECT GALLERY</h2>
-                <div class="star-divider"><span>★</span></div>
+                <h2 class="section-title">THE PROOF IS IN THE PAINT</h2>
+                <div class="star-divider"><span>&#9733;</span></div>
                 <p class="section-subtitle">Every photo here is a real project completed by our crew. No stock photos. What you see is what you get.</p>
             </div>
-            <div class="gallery-filters reveal">
-                <button class="gallery-filter-btn active" data-filter="all">ALL</button>
-                <button class="gallery-filter-btn" data-filter="exterior">EXTERIOR</button>
-                <button class="gallery-filter-btn" data-filter="interior">INTERIOR</button>
-                <button class="gallery-filter-btn" data-filter="action">IN ACTION</button>
+            <div class="gallery-tabs reveal">
+                <button class="gallery-tab active" data-tab="beforeafter">BEFORE &amp; AFTER</button>
+                <button class="gallery-tab" data-tab="projects">COMPLETED PROJECTS</button>
             </div>
-            <div class="gallery-grid reveal" id="galleryGrid">
-                <div class="gallery-item wide" data-category="exterior" onclick="openLightbox(0)">
-                    <img src="images/hero-victorian.jpg" alt="Completed Victorian home painting with Freedom Painting yard sign" loading="lazy">
-                    <span class="gallery-item-label">Victorian Restoration</span>
+
+            <div class="gallery-section active" id="tab-beforeafter">
+                <div class="ba-grid reveal">
+                    <div class="ba-pair"><div class="ba-images"><div class="ba-side"><img src="images/b4m.jpg" alt="Before" loading="lazy"><span class="ba-label before">BEFORE</span></div><div class="ba-side"><img src="images/b4k.jpg" alt="After" loading="lazy"><span class="ba-label after">AFTER</span></div></div><div class="ba-caption">Full Exterior &#8212; Peeling to Pristine</div></div>
+                    <div class="ba-pair"><div class="ba-images"><div class="ba-side"><img src="images/b43.jpg" alt="Before" loading="lazy"><span class="ba-label before">BEFORE</span></div><div class="ba-side"><img src="images/b44.jpg" alt="After" loading="lazy"><span class="ba-label after">AFTER</span></div></div><div class="ba-caption">Garage &#8212; Cedar to Bold Blue</div></div>
+                    <div class="ba-pair"><div class="ba-images"><div class="ba-side"><img src="images/b48.jpg" alt="Before" loading="lazy"><span class="ba-label before">BEFORE</span></div><div class="ba-side"><img src="images/b49.jpg" alt="After" loading="lazy"><span class="ba-label after">AFTER</span></div></div><div class="ba-caption">Full Exterior &#8212; Complete Transformation</div></div>
+                    <div class="ba-pair"><div class="ba-images"><div class="ba-side"><img src="images/b4cab.jpg" alt="Before" loading="lazy"><span class="ba-label before">BEFORE</span></div><div class="ba-side"><img src="images/b4cab2.jpg" alt="After" loading="lazy"><span class="ba-label after">AFTER</span></div></div><div class="ba-caption">Kitchen Cabinet Refinishing</div></div>
+                    <div class="ba-pair"><div class="ba-images"><div class="ba-side"><img src="images/b4shu.jpg" alt="Before" loading="lazy"><span class="ba-label before">BEFORE</span></div><div class="ba-side"><img src="images/b4shutt.jpg" alt="After" loading="lazy"><span class="ba-label after">AFTER</span></div></div><div class="ba-caption">Shutter Restoration</div></div>
+                    <div class="ba-pair"><div class="ba-images"><div class="ba-side"><img src="images/b45.jpg" alt="Before" loading="lazy"><span class="ba-label before">BEFORE</span></div><div class="ba-side"><img src="images/b46.jpg" alt="After" loading="lazy"><span class="ba-label after">AFTER</span></div></div><div class="ba-caption">Farmhouse &#8212; Scrape and Repaint</div></div>
+                    <div class="ba-pair"><div class="ba-images"><div class="ba-side"><img src="images/b4floor.jpg" alt="Before" loading="lazy"><span class="ba-label before">BEFORE</span></div><div class="ba-side"><img src="images/b4floor2.jpg" alt="After" loading="lazy"><span class="ba-label after">AFTER</span></div></div><div class="ba-caption">Hardwood Floor Staining</div></div>
+                    <div class="ba-pair"><div class="ba-images"><div class="ba-side"><img src="images/b41.jpg" alt="Before" loading="lazy"><span class="ba-label before">BEFORE</span></div><div class="ba-side"><img src="images/b42.jpg" alt="After" loading="lazy"><span class="ba-label after">AFTER</span></div></div><div class="ba-caption">Log Cabin Exterior</div></div>
+                    <div class="ba-pair"><div class="ba-images"><div class="ba-side"><img src="images/b499.jpg" alt="Before" loading="lazy"><span class="ba-label before">BEFORE</span></div><div class="ba-side"><img src="images/b4999.jpg" alt="After" loading="lazy"><span class="ba-label after">AFTER</span></div></div><div class="ba-caption">Cape Cod &#8212; Block to Beautiful</div></div>
+                    <div class="ba-pair"><div class="ba-images"><div class="ba-side"><img src="images/b4y.jpg" alt="Before" loading="lazy"><span class="ba-label before">BEFORE</span></div><div class="ba-side"><img src="images/b4o.jpg" alt="After" loading="lazy"><span class="ba-label after">AFTER</span></div></div><div class="ba-caption">Hillside Home &#8212; Full Repaint</div></div>
+                    <div class="ba-pair"><div class="ba-images"><div class="ba-side"><img src="images/b4caba.jpg" alt="Before" loading="lazy"><span class="ba-label before">BEFORE</span></div><div class="ba-side"><img src="images/b4cabb.jpg" alt="After" loading="lazy"><span class="ba-label after">AFTER</span></div></div><div class="ba-caption">Cabinet Detail &#8212; Close Up</div></div>
+                    <div class="ba-pair"><div class="ba-images"><div class="ba-side"><img src="images/b4z.jpg" alt="Before" loading="lazy"><span class="ba-label before">BEFORE</span></div><div class="ba-side"><img src="images/b4cover.jpg" alt="After" loading="lazy"><span class="ba-label after">AFTER</span></div></div><div class="ba-caption">Exterior &#8212; Prep to Paint</div></div>
                 </div>
-                <div class="gallery-item" data-category="interior" onclick="openLightbox(1)">
-                    <img src="images/interior-green-kitchen.jpg" alt="Green painted kitchen cabinets" loading="lazy">
-                    <span class="gallery-item-label">Kitchen Cabinets</span>
-                </div>
-                <div class="gallery-item" data-category="exterior" onclick="openLightbox(2)">
-                    <img src="images/exterior-blue-house.jpg" alt="Blue exterior house painting" loading="lazy">
-                    <span class="gallery-item-label">Full Exterior</span>
-                </div>
-                <div class="gallery-item" data-category="exterior" onclick="openLightbox(3)">
-                    <img src="images/exterior-yellow-lakehouse.jpg" alt="Yellow lakehouse exterior painting" loading="lazy">
-                    <span class="gallery-item-label">Lakehouse Exterior</span>
-                </div>
-                <div class="gallery-item" data-category="action" onclick="openLightbox(4)">
-                    <img src="images/action-trim-painting.jpg" alt="Painter doing detailed trim work" loading="lazy">
-                    <span class="gallery-item-label">Precision Trim Work</span>
-                </div>
-                <div class="gallery-item" data-category="exterior" onclick="openLightbox(5)">
-                    <img src="images/exterior-barn-house.jpg" alt="Red barn and log cabin exterior painting" loading="lazy">
-                    <span class="gallery-item-label">Barn & Cabin</span>
-                </div>
-                <div class="gallery-item wide" data-category="exterior" onclick="openLightbox(6)">
-                    <img src="images/exterior-victorian-crew.jpg" alt="Freedom Painting crew working on Victorian home" loading="lazy">
-                    <span class="gallery-item-label">The Crew at Work</span>
-                </div>
-                <div class="gallery-item" data-category="interior" onclick="openLightbox(7)">
-                    <img src="images/interior-gray-kitchen.jpg" alt="Gray painted kitchen cabinets and island" loading="lazy">
-                    <span class="gallery-item-label">Cabinet Refresh</span>
-                </div>
-                <div class="gallery-item" data-category="exterior" onclick="openLightbox(8)">
-                    <img src="images/exterior-blue-roofline.jpg" alt="Blue house with white trim roofline" loading="lazy">
-                    <span class="gallery-item-label">Roofline Detail</span>
-                </div>
-                <div class="gallery-item" data-category="action" onclick="openLightbox(9)">
-                    <img src="images/action-fence-painting.jpg" alt="Fence staining in progress" loading="lazy">
-                    <span class="gallery-item-label">Fence Staining</span>
-                </div>
-                <div class="gallery-item" data-category="exterior" onclick="openLightbox(10)">
-                    <img src="images/exterior-yellow-house.jpg" alt="Yellow colonial home being painted" loading="lazy">
-                    <span class="gallery-item-label">Colonial Exterior</span>
-                </div>
-                <div class="gallery-item" data-category="exterior" onclick="openLightbox(11)">
-                    <img src="images/exterior-cabin-flag.jpg" alt="Cabin with American flag after painting" loading="lazy">
-                    <span class="gallery-item-label">Maine Cabin</span>
-                </div>
-                <div class="gallery-item" data-category="exterior" onclick="openLightbox(12)">
-                    <img src="images/exterior-aframe-blue.jpg" alt="Blue A-frame house with yellow door" loading="lazy">
-                    <span class="gallery-item-label">A-Frame Character</span>
-                </div>
-                <div class="gallery-item" data-category="action" onclick="openLightbox(13)">
-                    <img src="images/action-cabinet-painting.jpg" alt="Painting kitchen cabinets" loading="lazy">
-                    <span class="gallery-item-label">Cabinet Work</span>
-                </div>
-                <div class="gallery-item" data-category="exterior" onclick="openLightbox(14)">
-                    <img src="images/exterior-gray-orange-barn.jpg" alt="Gray and orange barn style home" loading="lazy">
-                    <span class="gallery-item-label">Modern Barn</span>
-                </div>
-                <div class="gallery-item" data-category="interior" onclick="openLightbox(15)">
-                    <img src="images/interior-bathroom.jpg" alt="Bathroom walls painted" loading="lazy">
-                    <span class="gallery-item-label">Bathroom Refresh</span>
-                </div>
-                <div class="gallery-item" data-category="exterior" onclick="openLightbox(16)">
-                    <img src="images/exterior-purple-green-house.jpg" alt="Purple and green Victorian home" loading="lazy">
-                    <span class="gallery-item-label">Bold Color Choice</span>
-                </div>
-                <div class="gallery-item" data-category="action" onclick="openLightbox(17)">
-                    <img src="images/action-foyer-ladder.jpg" alt="Painting high foyer ceiling on ladder" loading="lazy">
-                    <span class="gallery-item-label">High Reach Work</span>
+            </div>
+
+            <div class="gallery-section" id="tab-projects">
+                <div class="projects-grid reveal" id="projectsGrid">
+                    <div class="project-item wide" onclick="openLightbox(0)"><img src="images/p01.jpg" alt="Completed project" loading="lazy"><span class="project-label">Deck Work</span></div>
+                    <div class="project-item" onclick="openLightbox(1)"><img src="images/p02.jpg" alt="Completed project" loading="lazy"><span class="project-label">Deck Lattice</span></div>
+                    <div class="project-item" onclick="openLightbox(2)"><img src="images/p03.jpg" alt="Completed project" loading="lazy"><span class="project-label">Interior</span></div>
+                    <div class="project-item" onclick="openLightbox(3)"><img src="images/p04.jpg" alt="Completed project" loading="lazy"><span class="project-label">Yellow Cottage</span></div>
+                    <div class="project-item" onclick="openLightbox(4)"><img src="images/p05.jpg" alt="Completed project" loading="lazy"><span class="project-label">Fence Work</span></div>
+                    <div class="project-item wide" onclick="openLightbox(5)"><img src="images/p06.jpg" alt="Completed project" loading="lazy"><span class="project-label">Exterior</span></div>
+                    <div class="project-item" onclick="openLightbox(6)"><img src="images/p07.jpg" alt="Completed project" loading="lazy"><span class="project-label">Exterior Detail</span></div>
+                    <div class="project-item" onclick="openLightbox(7)"><img src="images/p08.jpg" alt="Completed project" loading="lazy"><span class="project-label">Lakehouse</span></div>
+                    <div class="project-item" onclick="openLightbox(8)"><img src="images/p09.jpg" alt="Completed project" loading="lazy"><span class="project-label">Interior Detail</span></div>
+                    <div class="project-item wide" onclick="openLightbox(9)"><img src="images/p11.jpg" alt="Completed project" loading="lazy"><span class="project-label">Exterior</span></div>
+                    <div class="project-item" onclick="openLightbox(10)"><img src="images/p12.jpg" alt="Completed project" loading="lazy"><span class="project-label">Exterior</span></div>
+                    <div class="project-item" onclick="openLightbox(11)"><img src="images/p13.jpg" alt="Completed project" loading="lazy"><span class="project-label">Full Exterior</span></div>
+                    <div class="project-item" onclick="openLightbox(12)"><img src="images/p14.jpg" alt="Completed project" loading="lazy"><span class="project-label">Cabinet Work</span></div>
+                    <div class="project-item" onclick="openLightbox(13)"><img src="images/p15.jpg" alt="Completed project" loading="lazy"><span class="project-label">White Victorian</span></div>
+                    <div class="project-item wide" onclick="openLightbox(14)"><img src="images/p16.jpg" alt="Completed project" loading="lazy"><span class="project-label">Exterior</span></div>
+                    <div class="project-item" onclick="openLightbox(15)"><img src="images/p17.jpg" alt="Completed project" loading="lazy"><span class="project-label">Barn Exterior</span></div>
+                    <div class="project-item" onclick="openLightbox(16)"><img src="images/p18.jpg" alt="Completed project" loading="lazy"><span class="project-label">Detail Work</span></div>
+                    <div class="project-item" onclick="openLightbox(17)"><img src="images/p20.jpg" alt="Completed project" loading="lazy"><span class="project-label">Exterior</span></div>
+                    <div class="project-item wide" onclick="openLightbox(18)"><img src="images/p21.jpg" alt="Completed project" loading="lazy"><span class="project-label">Detail</span></div>
+                    <div class="project-item" onclick="openLightbox(19)"><img src="images/p22.jpg" alt="Completed project" loading="lazy"><span class="project-label">Exterior</span></div>
+                    <div class="project-item" onclick="openLightbox(20)"><img src="images/p23.jpg" alt="Completed project" loading="lazy"><span class="project-label">Barn &amp; Cabin</span></div>
+                    <div class="project-item" onclick="openLightbox(21)"><img src="images/p24.jpg" alt="Completed project" loading="lazy"><span class="project-label">Blue Exterior</span></div>
+                    <div class="project-item" onclick="openLightbox(22)"><img src="images/p25.jpg" alt="Completed project" loading="lazy"><span class="project-label">Interior</span></div>
+                    <div class="project-item wide" onclick="openLightbox(23)"><img src="images/p26.jpg" alt="Completed project" loading="lazy"><span class="project-label">Exterior</span></div>
+                    <div class="project-item" onclick="openLightbox(24)"><img src="images/p27.jpg" alt="Completed project" loading="lazy"><span class="project-label">Exterior</span></div>
+                    <div class="project-item" onclick="openLightbox(25)"><img src="images/p29.jpg" alt="Completed project" loading="lazy"><span class="project-label">Exterior Detail</span></div>
+                    <div class="project-item" onclick="openLightbox(26)"><img src="images/p30.jpg" alt="Completed project" loading="lazy"><span class="project-label">Completed</span></div>
+                    <div class="project-item wide" onclick="openLightbox(27)"><img src="images/p31.jpg" alt="Completed project" loading="lazy"><span class="project-label">Exterior</span></div>
+                    <div class="project-item" onclick="openLightbox(28)"><img src="images/p32.jpg" alt="Completed project" loading="lazy"><span class="project-label">Exterior</span></div>
+                    <div class="project-item" onclick="openLightbox(29)"><img src="images/p33.jpg" alt="Completed project" loading="lazy"><span class="project-label">Detail</span></div>
+                    <div class="project-item" onclick="openLightbox(30)"><img src="images/p34.jpg" alt="Completed project" loading="lazy"><span class="project-label">Completed</span></div>
+                    <div class="project-item" onclick="openLightbox(31)"><img src="images/p35.jpg" alt="Completed project" loading="lazy"><span class="project-label">Kitchen</span></div>
+                    <div class="project-item wide" onclick="openLightbox(32)"><img src="images/p36.jpg" alt="Completed project" loading="lazy"><span class="project-label">Blue Trim</span></div>
+                    <div class="project-item" onclick="openLightbox(33)"><img src="images/p37.jpg" alt="Completed project" loading="lazy"><span class="project-label">Red Siding</span></div>
+                    <div class="project-item" onclick="openLightbox(34)"><img src="images/p38.jpg" alt="Completed project" loading="lazy"><span class="project-label">Barn Style</span></div>
+                    <div class="project-item" onclick="openLightbox(35)"><img src="images/p39.jpg" alt="Completed project" loading="lazy"><span class="project-label">Exterior</span></div>
+                    <div class="project-item" onclick="openLightbox(36)"><img src="images/p40.jpg" alt="Completed project" loading="lazy"><span class="project-label">Exterior</span></div>
+                    <div class="project-item wide" onclick="openLightbox(37)"><img src="images/p41.jpg" alt="Completed project" loading="lazy"><span class="project-label">Exterior</span></div>
+                    <div class="project-item" onclick="openLightbox(38)"><img src="images/p42.jpg" alt="Completed project" loading="lazy"><span class="project-label">Modern Blue</span></div>
+                    <div class="project-item" onclick="openLightbox(39)"><img src="images/p43.jpg" alt="Completed project" loading="lazy"><span class="project-label">White Colonial</span></div>
+                    <div class="project-item" onclick="openLightbox(40)"><img src="images/p44.jpg" alt="Completed project" loading="lazy"><span class="project-label">Victorian</span></div>
+                    <div class="project-item" onclick="openLightbox(41)"><img src="images/p45.jpg" alt="Completed project" loading="lazy"><span class="project-label">Green Victorian</span></div>
+                    <div class="project-item wide" onclick="openLightbox(42)"><img src="images/p46.jpg" alt="Completed project" loading="lazy"><span class="project-label">Victorian Wide</span></div>
+                    <div class="project-item" onclick="openLightbox(43)"><img src="images/p47.jpg" alt="Completed project" loading="lazy"><span class="project-label">Yellow House</span></div>
+                    <div class="project-item" onclick="openLightbox(44)"><img src="images/p48.jpg" alt="Completed project" loading="lazy"><span class="project-label">Exterior</span></div>
+                    <div class="project-item wide" onclick="openLightbox(45)"><img src="images/p51.jpg" alt="Completed project" loading="lazy"><span class="project-label">Victorian Full</span></div>
+                    <div class="project-item" onclick="openLightbox(46)"><img src="images/p52.jpg" alt="Completed project" loading="lazy"><span class="project-label">Porch &amp; Columns</span></div>
+                    <div class="project-item" onclick="openLightbox(47)"><img src="images/p53.jpg" alt="Completed project" loading="lazy"><span class="project-label">Crew at Work</span></div>
+                    <div class="project-item" onclick="openLightbox(48)"><img src="images/p54.jpg" alt="Completed project" loading="lazy"><span class="project-label">Cabin Detail</span></div>
+                    <div class="project-item" onclick="openLightbox(49)"><img src="images/p55.jpg" alt="Completed project" loading="lazy"><span class="project-label">Cabin</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Lightbox -->
     <div class="lightbox" id="lightbox">
-        <button class="lightbox-close" onclick="closeLightbox()">✕</button>
-        <button class="lightbox-nav lightbox-prev" onclick="navLightbox(-1)">‹</button>
+        <button class="lightbox-close" onclick="closeLightbox()">&#10005;</button>
+        <button class="lightbox-nav lightbox-prev" onclick="navLightbox(-1)">&#8249;</button>
         <img id="lightboxImg" src="" alt="Gallery image">
-        <button class="lightbox-nav lightbox-next" onclick="navLightbox(1)">›</button>
+        <button class="lightbox-nav lightbox-next" onclick="navLightbox(1)">&#8250;</button>
     </div>
 
-    <!-- ============================================
-         TESTIMONIALS SECTION
-         ============================================ -->
+    <div class="social-banner">
+        <div class="container">
+            <h3>FOLLOW OUR WORK ON FACEBOOK</h3>
+            <p>See our latest projects, read reviews from real customers, and stay connected with Freedom Painting.</p>
+            <a href="https://www.facebook.com/freedompainting207" target="_blank" rel="noopener" class="btn btn-facebook">FOLLOW US ON FACEBOOK</a>
+        </div>
+    </div>
+
     <section class="testimonials section-padding" id="testimonials">
         <div class="container">
             <div class="testimonials-header reveal">
-                <span class="section-label">REAL REVIEWS</span>
-                <h2 class="section-title">WHAT OUR CUSTOMERS SAY</h2>
-                <div class="star-divider"><span>★</span></div>
-                <p class="section-subtitle">Every one of these reviews is from a real customer on Facebook. 58 reviews. 100% recommend.</p>
+                <span class="section-label">REAL REVIEWS FROM REAL CUSTOMERS</span>
+                <h2 class="section-title">DON'T TAKE OUR WORD FOR IT</h2>
+                <div class="star-divider"><span>&#9733;</span></div>
+                <p class="section-subtitle">58 five-star reviews on Facebook. 100% recommend. These are real people sharing real experiences.</p>
             </div>
         </div>
         <div class="testimonials-track-wrapper">
             <div class="testimonials-track" id="testimonialsTrack">
-                <!-- First set -->
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"They did a great job patching and painting the walls going up our staircase. The walls look new! They were quick, showed up on time and are very professional! Would recommend 100%"</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">NW</div>
-                        <div>
-                            <div class="testimonial-name">NATASHA WINSLOW</div>
-                            <div class="testimonial-date">October 2025</div>
-                        </div>
-                    </div>
-                    <span class="testimonial-source">FACEBOOK</span>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Rodney and his crew are hardworking, professional and polite men. They do quality work using durable materials. They show up. They stay on the job. They have earned my respect, appreciation and trust."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">BB</div>
-                        <div>
-                            <div class="testimonial-name">BERNARD BRODER</div>
-                            <div class="testimonial-date">August 2025</div>
-                        </div>
-                    </div>
-                    <span class="testimonial-source">FACEBOOK</span>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Easy to work with, quality painting, on time and within budget. And they meticulously cleaned up after themselves. Thank you!"</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">AF</div>
-                        <div>
-                            <div class="testimonial-name">ANNE P. FIGUERAS</div>
-                            <div class="testimonial-date">October 2025</div>
-                        </div>
-                    </div>
-                    <span class="testimonial-source">FACEBOOK</span>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Freedom Painting did a great job, painting the upstairs and all of the downstairs of our home. They transformed our space and it looks amazing! Very easy to work with. I would definitely recommend them!"</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">SM</div>
-                        <div>
-                            <div class="testimonial-name">SELBI MILTON</div>
-                            <div class="testimonial-date">March 2025</div>
-                        </div>
-                    </div>
-                    <span class="testimonial-source">FACEBOOK</span>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Great experience with Freedom Painting. We hired them to paint on both the exterior and interior of our house. They did a wonderful job. Rodney was great to work with and communication throughout was seamless."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">KF</div>
-                        <div>
-                            <div class="testimonial-name">KATE FITZ</div>
-                            <div class="testimonial-date">May 2024</div>
-                        </div>
-                    </div>
-                    <span class="testimonial-source">FACEBOOK</span>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"We had an absolutely outstanding experience with Rodney's team. They were here this week staining our old deck and it now looks brand new! From start to finish, they were incredibly reliable, friendly, and professional."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">LD</div>
-                        <div>
-                            <div class="testimonial-name">LISA DUBOIS HEROUX</div>
-                            <div class="testimonial-date">June 2025</div>
-                        </div>
-                    </div>
-                    <span class="testimonial-source">FACEBOOK</span>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Freedom Painting did a beautiful job on our home. They are very professional and very responsive to any questions we had. Several cut outs needed to be done and the painting came out fantastic."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">MW</div>
-                        <div>
-                            <div class="testimonial-name">MARY WEST</div>
-                            <div class="testimonial-date">February 2025</div>
-                        </div>
-                    </div>
-                    <span class="testimonial-source">FACEBOOK</span>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Rodney came as planned and did an amazing job. I will use him for any future painting needs. He was very professional, friendly and knowledgeable. If you have painting needs you will not be disappointed."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">TS</div>
-                        <div>
-                            <div class="testimonial-name">TAMMY WIGGINS SANFORD</div>
-                            <div class="testimonial-date">August 2024</div>
-                        </div>
-                    </div>
-                    <span class="testimonial-source">FACEBOOK</span>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"They were quick to get me a quote, and scheduled the work within a reasonable time. Rodney and his crew were clean, paid attention to the required details, and finished the work on time. I would highly recommend him."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">SL</div>
-                        <div>
-                            <div class="testimonial-name">STEVE LANGTON</div>
-                            <div class="testimonial-date">October 2023</div>
-                        </div>
-                    </div>
-                    <span class="testimonial-source">FACEBOOK</span>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"They were professional, thoughtful, and knew what they were doing. Not a drop spilled. Perfectionists, all of them, yet quick. They were non judgmental and it came out beautifully. Worth every penny!"</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">★</div>
-                        <div>
-                            <div class="testimonial-name">VERIFIED CUSTOMER</div>
-                            <div class="testimonial-date">2025</div>
-                        </div>
-                    </div>
-                    <span class="testimonial-source">FACEBOOK</span>
-                </div>
+                <div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Rodney and his crew are hardworking, professional and polite men. They do quality work using durable materials. They show up. They stay on the job. They have earned my respect, appreciation and trust."</p><div class="testimonial-author"><div class="testimonial-avatar">BB</div><div><div class="testimonial-name">BERNARD BRODER</div><div class="testimonial-date">August 2025</div></div></div><span class="testimonial-source">FACEBOOK</span></div>
+                <div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"We had an absolutely outstanding experience with Rodney's team. They were here this week staining our old deck and it now looks brand new! From start to finish, they were incredibly reliable, friendly, and professional."</p><div class="testimonial-author"><div class="testimonial-avatar">LD</div><div><div class="testimonial-name">LISA DUBOIS HEROUX</div><div class="testimonial-date">June 2025</div></div></div><span class="testimonial-source">FACEBOOK</span></div>
+                <div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Freedom Painting did a great job, painting the upstairs and all of the downstairs of our home. They transformed our space and it looks amazing! Very easy to work with. I would definitely recommend them!"</p><div class="testimonial-author"><div class="testimonial-avatar">SM</div><div><div class="testimonial-name">SELBI MILTON</div><div class="testimonial-date">March 2025</div></div></div><span class="testimonial-source">FACEBOOK</span></div>
+                <div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"They were professional, thoughtful, and knew what they were doing. Not a drop spilled. Perfectionists, all of them, yet quick. They were non judgmental and it came out beautifully. Worth every penny!"</p><div class="testimonial-author"><div class="testimonial-avatar">&#9733;</div><div><div class="testimonial-name">VERIFIED CUSTOMER</div><div class="testimonial-date">2025</div></div></div><span class="testimonial-source">FACEBOOK</span></div>
+                <div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Great experience with Freedom Painting. We hired them to paint on both the exterior and interior of our house. They did a wonderful job. Rodney was great to work with and communication throughout was seamless."</p><div class="testimonial-author"><div class="testimonial-avatar">KF</div><div><div class="testimonial-name">KATE FITZ</div><div class="testimonial-date">May 2024</div></div></div><span class="testimonial-source">FACEBOOK</span></div>
+                <div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Freedom Painting did a beautiful job on our home. They are very professional and very responsive to any questions we had. Several cut outs needed to be done and the painting came out fantastic."</p><div class="testimonial-author"><div class="testimonial-avatar">MW</div><div><div class="testimonial-name">MARY WEST</div><div class="testimonial-date">February 2025</div></div></div><span class="testimonial-source">FACEBOOK</span></div>
+                <div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Rodney came as planned and did an amazing job. I will use him for any future painting needs. He was very professional, friendly and knowledgeable. If you have painting needs you will not be disappointed."</p><div class="testimonial-author"><div class="testimonial-avatar">TS</div><div><div class="testimonial-name">TAMMY WIGGINS SANFORD</div><div class="testimonial-date">August 2024</div></div></div><span class="testimonial-source">FACEBOOK</span></div>
+                <div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"They did a great job patching and painting the walls going up our staircase. The walls look new! They were quick, showed up on time and are very professional! Would recommend 100%"</p><div class="testimonial-author"><div class="testimonial-avatar">NW</div><div><div class="testimonial-name">NATASHA WINSLOW</div><div class="testimonial-date">October 2025</div></div></div><span class="testimonial-source">FACEBOOK</span></div>
+                <div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Easy to work with, quality painting, on time and within budget. And they meticulously cleaned up after themselves. Thank you!"</p><div class="testimonial-author"><div class="testimonial-avatar">AF</div><div><div class="testimonial-name">ANNE P. FIGUERAS</div><div class="testimonial-date">October 2025</div></div></div><span class="testimonial-source">FACEBOOK</span></div>
+                <div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"They were quick to get me a quote, and scheduled the work within a reasonable time. Rodney and his crew were clean, paid attention to the required details, and finished the work on time. I would highly recommend him."</p><div class="testimonial-author"><div class="testimonial-avatar">SL</div><div><div class="testimonial-name">STEVE LANGTON</div><div class="testimonial-date">October 2023</div></div></div><span class="testimonial-source">FACEBOOK</span></div>
                 <!-- Duplicate set for infinite scroll -->
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"They did a great job patching and painting the walls going up our staircase. The walls look new! They were quick, showed up on time and are very professional! Would recommend 100%"</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">NW</div>
-                        <div>
-                            <div class="testimonial-name">NATASHA WINSLOW</div>
-                            <div class="testimonial-date">October 2025</div>
-                        </div>
-                    </div>
-                    <span class="testimonial-source">FACEBOOK</span>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Rodney and his crew are hardworking, professional and polite men. They do quality work using durable materials. They show up. They stay on the job. They have earned my respect, appreciation and trust."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">BB</div>
-                        <div>
-                            <div class="testimonial-name">BERNARD BRODER</div>
-                            <div class="testimonial-date">August 2025</div>
-                        </div>
-                    </div>
-                    <span class="testimonial-source">FACEBOOK</span>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Easy to work with, quality painting, on time and within budget. And they meticulously cleaned up after themselves. Thank you!"</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">AF</div>
-                        <div>
-                            <div class="testimonial-name">ANNE P. FIGUERAS</div>
-                            <div class="testimonial-date">October 2025</div>
-                        </div>
-                    </div>
-                    <span class="testimonial-source">FACEBOOK</span>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Freedom Painting did a great job, painting the upstairs and all of the downstairs of our home. They transformed our space and it looks amazing! Very easy to work with. I would definitely recommend them!"</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">SM</div>
-                        <div>
-                            <div class="testimonial-name">SELBI MILTON</div>
-                            <div class="testimonial-date">March 2025</div>
-                        </div>
-                    </div>
-                    <span class="testimonial-source">FACEBOOK</span>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Great experience with Freedom Painting. We hired them to paint on both the exterior and interior of our house. They did a wonderful job. Rodney was great to work with and communication throughout was seamless."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">KF</div>
-                        <div>
-                            <div class="testimonial-name">KATE FITZ</div>
-                            <div class="testimonial-date">May 2024</div>
-                        </div>
-                    </div>
-                    <span class="testimonial-source">FACEBOOK</span>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"We had an absolutely outstanding experience with Rodney's team. They were here this week staining our old deck and it now looks brand new! From start to finish, they were incredibly reliable, friendly, and professional."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">LD</div>
-                        <div>
-                            <div class="testimonial-name">LISA DUBOIS HEROUX</div>
-                            <div class="testimonial-date">June 2025</div>
-                        </div>
-                    </div>
-                    <span class="testimonial-source">FACEBOOK</span>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Freedom Painting did a beautiful job on our home. They are very professional and very responsive to any questions we had. Several cut outs needed to be done and the painting came out fantastic."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">MW</div>
-                        <div>
-                            <div class="testimonial-name">MARY WEST</div>
-                            <div class="testimonial-date">February 2025</div>
-                        </div>
-                    </div>
-                    <span class="testimonial-source">FACEBOOK</span>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Rodney came as planned and did an amazing job. I will use him for any future painting needs. He was very professional, friendly and knowledgeable. If you have painting needs you will not be disappointed."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">TS</div>
-                        <div>
-                            <div class="testimonial-name">TAMMY WIGGINS SANFORD</div>
-                            <div class="testimonial-date">August 2024</div>
-                        </div>
-                    </div>
-                    <span class="testimonial-source">FACEBOOK</span>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"They were quick to get me a quote, and scheduled the work within a reasonable time. Rodney and his crew were clean, paid attention to the required details, and finished the work on time. I would highly recommend him."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">SL</div>
-                        <div>
-                            <div class="testimonial-name">STEVE LANGTON</div>
-                            <div class="testimonial-date">October 2023</div>
-                        </div>
-                    </div>
-                    <span class="testimonial-source">FACEBOOK</span>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"They were professional, thoughtful, and knew what they were doing. Not a drop spilled. Perfectionists, all of them, yet quick. They were non judgmental and it came out beautifully. Worth every penny!"</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">★</div>
-                        <div>
-                            <div class="testimonial-name">VERIFIED CUSTOMER</div>
-                            <div class="testimonial-date">2025</div>
-                        </div>
-                    </div>
-                    <span class="testimonial-source">FACEBOOK</span>
-                </div>
+                <div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Rodney and his crew are hardworking, professional and polite men. They do quality work using durable materials. They show up. They stay on the job. They have earned my respect, appreciation and trust."</p><div class="testimonial-author"><div class="testimonial-avatar">BB</div><div><div class="testimonial-name">BERNARD BRODER</div><div class="testimonial-date">August 2025</div></div></div><span class="testimonial-source">FACEBOOK</span></div>
+                <div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"We had an absolutely outstanding experience with Rodney's team. They were here this week staining our old deck and it now looks brand new! From start to finish, they were incredibly reliable, friendly, and professional."</p><div class="testimonial-author"><div class="testimonial-avatar">LD</div><div><div class="testimonial-name">LISA DUBOIS HEROUX</div><div class="testimonial-date">June 2025</div></div></div><span class="testimonial-source">FACEBOOK</span></div>
+                <div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Freedom Painting did a great job, painting the upstairs and all of the downstairs of our home. They transformed our space and it looks amazing! Very easy to work with. I would definitely recommend them!"</p><div class="testimonial-author"><div class="testimonial-avatar">SM</div><div><div class="testimonial-name">SELBI MILTON</div><div class="testimonial-date">March 2025</div></div></div><span class="testimonial-source">FACEBOOK</span></div>
+                <div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"They were professional, thoughtful, and knew what they were doing. Not a drop spilled. Perfectionists, all of them, yet quick. They were non judgmental and it came out beautifully. Worth every penny!"</p><div class="testimonial-author"><div class="testimonial-avatar">&#9733;</div><div><div class="testimonial-name">VERIFIED CUSTOMER</div><div class="testimonial-date">2025</div></div></div><span class="testimonial-source">FACEBOOK</span></div>
+                <div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Great experience with Freedom Painting. We hired them to paint on both the exterior and interior of our house. They did a wonderful job. Rodney was great to work with and communication throughout was seamless."</p><div class="testimonial-author"><div class="testimonial-avatar">KF</div><div><div class="testimonial-name">KATE FITZ</div><div class="testimonial-date">May 2024</div></div></div><span class="testimonial-source">FACEBOOK</span></div>
+                <div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Freedom Painting did a beautiful job on our home. They are very professional and very responsive to any questions we had. Several cut outs needed to be done and the painting came out fantastic."</p><div class="testimonial-author"><div class="testimonial-avatar">MW</div><div><div class="testimonial-name">MARY WEST</div><div class="testimonial-date">February 2025</div></div></div><span class="testimonial-source">FACEBOOK</span></div>
+                <div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Rodney came as planned and did an amazing job. I will use him for any future painting needs. He was very professional, friendly and knowledgeable. If you have painting needs you will not be disappointed."</p><div class="testimonial-author"><div class="testimonial-avatar">TS</div><div><div class="testimonial-name">TAMMY WIGGINS SANFORD</div><div class="testimonial-date">August 2024</div></div></div><span class="testimonial-source">FACEBOOK</span></div>
+                <div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"They did a great job patching and painting the walls going up our staircase. The walls look new! They were quick, showed up on time and are very professional! Would recommend 100%"</p><div class="testimonial-author"><div class="testimonial-avatar">NW</div><div><div class="testimonial-name">NATASHA WINSLOW</div><div class="testimonial-date">October 2025</div></div></div><span class="testimonial-source">FACEBOOK</span></div>
+                <div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"Easy to work with, quality painting, on time and within budget. And they meticulously cleaned up after themselves. Thank you!"</p><div class="testimonial-author"><div class="testimonial-avatar">AF</div><div><div class="testimonial-name">ANNE P. FIGUERAS</div><div class="testimonial-date">October 2025</div></div></div><span class="testimonial-source">FACEBOOK</span></div>
+                <div class="testimonial-card"><div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">"They were quick to get me a quote, and scheduled the work within a reasonable time. Rodney and his crew were clean, paid attention to the required details, and finished the work on time. I would highly recommend him."</p><div class="testimonial-author"><div class="testimonial-avatar">SL</div><div><div class="testimonial-name">STEVE LANGTON</div><div class="testimonial-date">October 2023</div></div></div><span class="testimonial-source">FACEBOOK</span></div>
             </div>
         </div>
     </section>
 
-    <!-- ============================================
-         CONTACT SECTION
-         ============================================ -->
     <section class="contact section-padding" id="contact">
         <div class="container">
             <div class="contact-grid">
                 <div class="reveal">
                     <span class="section-label">GET IN TOUCH</span>
                     <h2 class="section-title">LET'S TALK ABOUT YOUR PROJECT</h2>
-                    <div class="star-divider" style="justify-content: flex-start;"><span>★</span></div>
-                    <p class="section-subtitle" style="margin-bottom: 3rem;">Whether you need a full exterior repaint or just a room refreshed, we'd love to hear about your project. Free quotes. No pressure. Just honest work.</p>
-
-                    <div class="contact-info-block">
-                        <h3>CALL US</h3>
-                        <a href="tel:2075029970" class="contact-phone">(207) 502-9970</a>
-                    </div>
-                    <div class="contact-info-block">
-                        <h3>EMAIL US</h3>
-                        <a href="mailto:freedompainting207@outlook.com">freedompainting207@outlook.com</a>
-                    </div>
-                    <div class="contact-info-block">
-                        <h3>SERVICE AREA</h3>
-                        <p>Houlton, ME &bull; Hodgdon &bull; Presque Isle &bull; Aroostook County &amp; surrounding areas</p>
-                    </div>
-                    <div class="contact-info-block">
-                        <h3>FIND US ON FACEBOOK</h3>
-                        <a href="https://www.facebook.com/FreedomPainting" target="_blank" rel="noopener">facebook.com/FreedomPainting</a>
-                    </div>
-                    <div class="contact-badge">★ 100% RECOMMENDED &bull; 58 REVIEWS</div>
+                    <div class="star-divider" style="justify-content: flex-start;"><span>&#9733;</span></div>
+                    <p class="section-subtitle" style="margin-bottom: 3rem;">Whether you need a full exterior repaint or just a room refreshed, we'd love to hear about your project. Free quotes. No pressure. Just honest work from a veteran-owned company you can trust.</p>
+                    <div class="contact-info-block"><h3>CALL OR TEXT US</h3><a href="tel:2075029970" class="contact-phone">(207) 502-9970</a></div>
+                    <div class="contact-info-block"><h3>EMAIL US</h3><a href="mailto:freedompainting207@outlook.com">freedompainting207@outlook.com</a></div>
+                    <div class="contact-info-block"><h3>SERVICE AREA</h3><p>Proudly serving the <strong>Greater Houlton Area</strong> and surrounding communities. Not sure if we cover your area? Give us a call or text &#8212; we're happy to check availability for your project.</p></div>
+                    <div class="contact-info-block"><h3>FOLLOW US</h3><a href="https://www.facebook.com/freedompainting207" target="_blank" rel="noopener" style="color: var(--red); font-weight: 600;">facebook.com/freedompainting207</a></div>
+                    <div style="margin-top: 1rem;"><span class="contact-badge">&#127894; VETERAN OWNED</span><span class="contact-badge">&#128203; LICENSED IN MAINE</span><span class="contact-badge">&#11088; 100% RECOMMENDED</span></div>
                 </div>
-
                 <div class="contact-form-card reveal" id="contactFormCard">
-                    <h3>REQUEST A QUOTE</h3>
+                    <h3>REQUEST A FREE QUOTE</h3>
                     <p>Fill out the form and we'll get back to you within 24 hours.</p>
                     <form id="contactForm" onsubmit="submitContactForm(event)">
                         <div class="form-row">
-                            <div class="form-group">
-                                <label for="cf-name">YOUR NAME</label>
-                                <input type="text" id="cf-name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="cf-phone">PHONE NUMBER</label>
-                                <input type="tel" id="cf-phone" name="phone" required>
-                            </div>
+                            <div class="form-group"><label for="cf-name">YOUR NAME</label><input type="text" id="cf-name" name="name" required></div>
+                            <div class="form-group"><label for="cf-phone">PHONE NUMBER</label><input type="tel" id="cf-phone" name="phone" required></div>
                         </div>
-                        <div class="form-group">
-                            <label for="cf-email">EMAIL ADDRESS</label>
-                            <input type="email" id="cf-email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="cf-service">SERVICE NEEDED</label>
-                            <select id="cf-service" name="service">
-                                <option value="">Select a service...</option>
-                                <option value="exterior">Exterior Painting</option>
-                                <option value="interior">Interior Painting</option>
-                                <option value="cabinets">Cabinet Refinishing</option>
-                                <option value="deck">Deck / Fence Staining</option>
-                                <option value="repair">Wall Repair / Prep</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="cf-message">TELL US ABOUT YOUR PROJECT</label>
-                            <textarea id="cf-message" name="message" placeholder="Describe the work you need done — size of area, number of rooms, current condition, timeline, etc."></textarea>
-                        </div>
+                        <div class="form-group"><label for="cf-email">EMAIL ADDRESS</label><input type="email" id="cf-email" name="email" required></div>
+                        <div class="form-group"><label for="cf-service">SERVICE NEEDED</label><select id="cf-service" name="service"><option value="">Select a service...</option><option value="exterior">Exterior Painting</option><option value="interior">Interior Painting</option><option value="color">Color Consultation</option><option value="other">Other</option></select></div>
+                        <div class="form-group"><label for="cf-message">TELL US ABOUT YOUR PROJECT</label><textarea id="cf-message" name="message" placeholder="Describe the work you need done &#8212; size of area, number of rooms, current condition, timeline, etc."></textarea></div>
                         <button type="submit" class="form-submit" id="contactSubmitBtn">SEND QUOTE REQUEST</button>
                     </form>
-                    <div class="form-success" id="formSuccess">
-                        <h4>REQUEST SENT!</h4>
-                        <p>Thanks for reaching out. Rodney will get back to you within 24 hours. If it's urgent, call us directly at <a href="tel:2075029970" style="color: var(--red);">(207) 502-9970</a>.</p>
-                    </div>
+                    <div class="form-success" id="formSuccess"><h4>REQUEST SENT!</h4><p>Thanks for reaching out. Rodney will get back to you within 24 hours. If it's urgent, call or text us directly at <a href="tel:2075029970" style="color: var(--red);">(207) 502-9970</a>.</p></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============================================
-         FOOTER
-         ============================================ -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="#" class="nav-logo" style="margin-bottom: 0.5rem;">
-                        <img src="images/Logo.jpg" alt="Freedom Painting" style="height: 60px; border-radius: 4px;">
-                    </a>
-                    <p>Professional residential painting serving Houlton, Aroostook County, and surrounding communities in Maine. Locally owned and operated.</p>
-                </div>
-                <div>
-                    <h4>QUICK LINKS</h4>
-                    <ul class="footer-links">
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#testimonials">Reviews</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>CONTACT</h4>
-                    <ul class="footer-links">
-                        <li><a href="tel:2075029970">(207) 502-9970</a></li>
-                        <li><a href="mailto:freedompainting207@outlook.com">freedompainting207@outlook.com</a></li>
-                        <li>Calais Rd, Hodgdon, ME 04730</li>
-                    </ul>
-                </div>
+                <div class="footer-brand"><a href="#" class="nav-logo" style="margin-bottom: 0.5rem;"><img src="images/Logo.jpg" alt="Freedom Painting" style="height: 60px; border-radius: 4px;"></a><p>Veteran owned, licensed residential painting company serving the Greater Houlton area in Maine. Built on hard work, integrity, and American values.</p></div>
+                <div><h4>QUICK LINKS</h4><ul class="footer-links"><li><a href="#services">Services</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#testimonials">Reviews</a></li><li><a href="#contact">Contact</a></li><li><a href="https://www.facebook.com/freedompainting207" target="_blank" rel="noopener">Facebook</a></li></ul></div>
+                <div><h4>CONTACT</h4><ul class="footer-links"><li><a href="tel:2075029970">(207) 502-9970</a></li><li><a href="mailto:freedompainting207@outlook.com">freedompainting207@outlook.com</a></li><li>Greater Houlton Area, ME</li><li style="margin-top: 0.75rem; color: rgba(255,255,255,0.5); font-size: 0.8rem;">Veteran Owned &bull; Licensed in Maine</li></ul></div>
             </div>
-            <div class="footer-bottom">
-                <span>&copy; 2025 Freedom Painting. All rights reserved.</span>
-                <span>Serving Aroostook County with pride.</span>
-            </div>
+            <div class="footer-bottom"><span>&copy; 2025 Freedom Painting. All rights reserved. Veteran owned &amp; operated.</span><span>Licensed in the State of Maine.</span></div>
         </div>
     </footer>
 
-    <!-- ============================================
-         CHAT WIDGET
-         ============================================ -->
-    <button id="minerva-chat-btn" onclick="toggleChat()" aria-label="Open chat">💬</button>
-    <div id="minerva-chat-window">
-        <div id="minerva-chat-header">
-            <div class="chat-header-dot"></div>
-            <div class="chat-header-info">
-                <h4>FREEDOM PAINTING</h4>
-                <p>Usually replies instantly</p>
-            </div>
-        </div>
-        <div id="minerva-chat-messages">
-            <div class="msg bot-msg">Hi there! I'm the Freedom Painting assistant. I can help you with quotes, scheduling, or answer questions about our services. What can I help you with today?</div>
-        </div>
-        <div class="typing-indicator" id="typingIndicator">
-            <span></span><span></span><span></span>
-        </div>
-        <div id="minerva-chat-input-area">
-            <input type="text" id="minerva-user-input" placeholder="Ask about our services..." onkeypress="handleKeyPress(event)">
-            <button id="minerva-send-btn" onclick="sendMessage()">SEND</button>
-        </div>
-    </div>
-
-    <!-- ============================================
-         JAVASCRIPT
-         ============================================ -->
     <script>
-        // ---- NAVIGATION ----
-        const nav = document.getElementById('nav');
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('navLinks');
+        var nav = document.getElementById('nav');
+        var hamburger = document.getElementById('hamburger');
+        var navLinks = document.getElementById('navLinks');
+        window.addEventListener('scroll', function() { nav.classList.toggle('scrolled', window.scrollY > 80); });
+        hamburger.addEventListener('click', function() { navLinks.classList.toggle('mobile-open'); });
+        navLinks.querySelectorAll('a').forEach(function(link) { link.addEventListener('click', function() { navLinks.classList.remove('mobile-open'); }); });
 
-        window.addEventListener('scroll', () => {
-            nav.classList.toggle('scrolled', window.scrollY > 80);
-        });
+        var revealElements = document.querySelectorAll('.reveal');
+        var revealObserver = new IntersectionObserver(function(entries) { entries.forEach(function(entry) { if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); } }); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        revealElements.forEach(function(el) { revealObserver.observe(el); });
 
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('mobile-open');
-        });
+        var tabBtns = document.querySelectorAll('.gallery-tab');
+        tabBtns.forEach(function(btn) { btn.addEventListener('click', function() { tabBtns.forEach(function(b) { b.classList.remove('active'); }); btn.classList.add('active'); document.querySelectorAll('.gallery-section').forEach(function(sec) { sec.classList.remove('active'); }); document.getElementById('tab-' + btn.dataset.tab).classList.add('active'); }); });
 
-        // Close mobile menu on link click
-        navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => navLinks.classList.remove('mobile-open'));
-        });
+        var lightbox = document.getElementById('lightbox');
+        var lightboxImg = document.getElementById('lightboxImg');
+        var currentLightboxIndex = 0;
+        var projectItems = document.querySelectorAll('.project-item');
+        var projectImages = [];
+        projectItems.forEach(function(item) { projectImages.push(item.querySelector('img').src); });
+        function openLightbox(index) { currentLightboxIndex = index; lightboxImg.src = projectImages[index]; lightbox.classList.add('active'); document.body.style.overflow = 'hidden'; }
+        function closeLightbox() { lightbox.classList.remove('active'); document.body.style.overflow = ''; }
+        function navLightbox(dir) { currentLightboxIndex = (currentLightboxIndex + dir + projectImages.length) % projectImages.length; lightboxImg.src = projectImages[currentLightboxIndex]; }
+        lightbox.addEventListener('click', function(e) { if (e.target === lightbox) closeLightbox(); });
+        document.addEventListener('keydown', function(e) { if (!lightbox.classList.contains('active')) return; if (e.key === 'Escape') closeLightbox(); if (e.key === 'ArrowLeft') navLightbox(-1); if (e.key === 'ArrowRight') navLightbox(1); });
 
-        // ---- SCROLL REVEAL ----
-        const revealElements = document.querySelectorAll('.reveal');
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    revealObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-        revealElements.forEach(el => revealObserver.observe(el));
-
-        // ---- GALLERY FILTERS ----
-        const filterBtns = document.querySelectorAll('.gallery-filter-btn');
-        const galleryItems = document.querySelectorAll('.gallery-item');
-
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                filterBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                const filter = btn.dataset.filter;
-                galleryItems.forEach(item => {
-                    if (filter === 'all' || item.dataset.category === filter) {
-                        item.style.display = '';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
-            });
-        });
-
-        // ---- LIGHTBOX ----
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightboxImg');
-        let currentLightboxIndex = 0;
-        const galleryImages = [];
-        galleryItems.forEach(item => {
-            galleryImages.push(item.querySelector('img').src);
-        });
-
-        function openLightbox(index) {
-            currentLightboxIndex = index;
-            lightboxImg.src = galleryImages[index];
-            lightbox.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-        function closeLightbox() {
-            lightbox.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-        function navLightbox(dir) {
-            currentLightboxIndex = (currentLightboxIndex + dir + galleryImages.length) % galleryImages.length;
-            lightboxImg.src = galleryImages[currentLightboxIndex];
-        }
-        lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
-        document.addEventListener('keydown', (e) => {
-            if (!lightbox.classList.contains('active')) return;
-            if (e.key === 'Escape') closeLightbox();
-            if (e.key === 'ArrowLeft') navLightbox(-1);
-            if (e.key === 'ArrowRight') navLightbox(1);
-        });
-
-        // ---- CONTACT FORM ----
-        // IMPORTANT: Update this URL to your Render backend URL
-        const BACKEND_URL = 'https://minerva-bot.onrender.com';
-
-        async function submitContactForm(e) {
-            e.preventDefault();
-            const btn = document.getElementById('contactSubmitBtn');
-            btn.disabled = true;
-            btn.textContent = 'SENDING...';
-
-            const formData = {
-                name: document.getElementById('cf-name').value,
-                phone: document.getElementById('cf-phone').value,
-                email: document.getElementById('cf-email').value,
-                service: document.getElementById('cf-service').value,
-                message: document.getElementById('cf-message').value
-            };
-
-            try {
-                const resp = await fetch(BACKEND_URL + '/contact', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(formData)
-                });
-                const data = await resp.json();
-                if (data.success) {
-                    document.getElementById('contactForm').style.display = 'none';
-                    document.getElementById('formSuccess').classList.add('active');
-                } else {
-                    btn.disabled = false;
-                    btn.textContent = 'SEND QUOTE REQUEST';
-                    alert('Something went wrong. Please call us directly at (207) 502-9970.');
-                }
-            } catch (err) {
-                btn.disabled = false;
-                btn.textContent = 'SEND QUOTE REQUEST';
-                alert('Could not reach the server. Please call us directly at (207) 502-9970.');
-            }
-        }
-
-        // ---- CHAT WIDGET ----
-        let chatUserId = localStorage.getItem('freedom_chat_id');
-        if (!chatUserId) {
-            chatUserId = 'web_' + Math.random().toString(36).substr(2, 9);
-            localStorage.setItem('freedom_chat_id', chatUserId);
-        }
-
-        function toggleChat() {
-            const chatWindow = document.getElementById('minerva-chat-window');
-            const chatBtn = document.getElementById('minerva-chat-btn');
-            const isOpen = chatWindow.style.display === 'flex';
-            chatWindow.style.display = isOpen ? 'none' : 'flex';
-            chatBtn.classList.toggle('active', !isOpen);
-            chatBtn.textContent = isOpen ? '💬' : '✕';
-        }
-
-        function handleKeyPress(event) {
-            if (event.key === 'Enter') sendMessage();
-        }
-
-        async function sendMessage() {
-            const inputField = document.getElementById('minerva-user-input');
-            const messageText = inputField.value.trim();
-            if (!messageText) return;
-
-            appendMessage(messageText, 'user-msg');
-            inputField.value = '';
-
-            // Show typing indicator
-            document.getElementById('typingIndicator').style.display = 'block';
-            scrollChat();
-
-            try {
-                const response = await fetch(BACKEND_URL + '/chat', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        user_id: chatUserId,
-                        message: messageText
-                    })
-                });
-
-                const data = await response.json();
-                document.getElementById('typingIndicator').style.display = 'none';
-
-                if (data.reply) {
-                    appendMessage(data.reply, 'bot-msg');
-                } else {
-                    appendMessage("Sorry, I'm having trouble right now. Please call us at (207) 502-9970.", 'bot-msg');
-                }
-            } catch (error) {
-                document.getElementById('typingIndicator').style.display = 'none';
-                appendMessage("Can't reach the server right now. Please call us directly at (207) 502-9970.", 'bot-msg');
-            }
-        }
-
-        function appendMessage(text, className) {
-            const msgBox = document.createElement('div');
-            msgBox.className = 'msg ' + className;
-            msgBox.textContent = text;
-            const chatArea = document.getElementById('minerva-chat-messages');
-            chatArea.appendChild(msgBox);
-            scrollChat();
-        }
-
-        function scrollChat() {
-            const chatArea = document.getElementById('minerva-chat-messages');
-            chatArea.scrollTop = chatArea.scrollHeight;
-        }
+        var FORMSPREE_URL = 'https://formspree.io/f/xdawlbal';
+        function submitContactForm(e) { e.preventDefault(); var btn = document.getElementById('contactSubmitBtn'); btn.disabled = true; btn.textContent = 'SENDING...'; var form = document.getElementById('contactForm'); var formData = new FormData(form); fetch(FORMSPREE_URL, { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } }).then(function(resp) { if (resp.ok) { document.getElementById('contactForm').style.display = 'none'; document.getElementById('formSuccess').classList.add('active'); } else { btn.disabled = false; btn.textContent = 'SEND QUOTE REQUEST'; alert('Something went wrong. Please call us directly at (207) 502-9970.'); } }).catch(function() { btn.disabled = false; btn.textContent = 'SEND QUOTE REQUEST'; alert('Could not send the form. Please call us directly at (207) 502-9970.'); }); }
     </script>
 </body>
 </html>
